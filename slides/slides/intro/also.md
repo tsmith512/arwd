@@ -1,3 +1,5 @@
 # Also made by:
 
-## Chris Ruppel
+- Chris Ruppel
+- Sam Richard
+- Ian Carrico
