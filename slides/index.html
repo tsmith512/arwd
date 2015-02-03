@@ -10,14 +10,13 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6795652/627226/css/fonts.css" />
 
-        <link rel="stylesheet" href="js/vendor/reveal/css/reveal.css">
+        <link rel="stylesheet" href="../js/vendor/reveal/css/reveal.min.css" />
+        <link rel="stylesheet" href="../../intro-to-singularity/css/slides.css" />
 
-        <link rel="stylesheet" href="css/theme.css" id="theme">
 
 
-        <!-- For syntax highlighting -->
-        <link rel="stylesheet" href="js/vendor/reveal/lib/css/zenburn.css" id="highlight-theme">
 
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
         <script>
@@ -558,31 +557,37 @@
 
         </div>
 
-        <script src="js/vendor/reveal/lib/js/head.min.js"></script>
-        <script src="js/vendor/reveal/js/reveal.js"></script>
+        <script src="../js/vendor/reveal/lib/js/head.min.js"></script>
+        <script src="../js/vendor/reveal/js/reveal.min.js"></script>
+        <script src="../js/vendor/prism.js"></script>
         <script>
             // Configure Reveal
             // Full list of configuration options available here:
             // https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                width: 1200,
+                height: 800,
+
                 controls: true,
                 progress: true,
                 history: true,
                 center: true,
+                keyboard: true,
 
-                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
                 // Optional libraries used to extend on reveal.js
                 dependencies: [
-                    { src: 'js/vendor/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: 'js/vendor/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'js/vendor/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'js/vendor/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: 'js/vendor/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-                    { src: 'js/vendor/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-                    // { src: 'js/vendor/reveal/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-                    //{ src: 'js/vendor/reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    { src: '../js/vendor/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '../js/vendor/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../js/vendor/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../js/vendor/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: '../js/vendor/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: '../js/vendor/reveal/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: '../js/vendor/reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
                     { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
                 ]
