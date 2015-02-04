@@ -603,6 +603,16 @@ pre.line-numbers > code {
 .reveal .fourkitchens {
   color: #35AA4E;
 }
+.reveal table {
+  font-size: 0.875em;
+  width: 100%;
+}
+.reveal table td {
+  padding: 0.25em;
+}
+.reveal img {
+  height: auto;
+}
 
 .intro-tsmith body {
   background-image: url("../slides/img/intro-tsmith.jpg");
