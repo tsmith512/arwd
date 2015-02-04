@@ -1,15 +1,18 @@
 ## Today we're using SCSS
 
-<br>
-<h3 class="fragment">Tech reasons</h3>
-<ul>
-  <li class="fragment">Easier to understand if you know CSS</li>
-  <li class="fragment">Easier to integrate in the real-world</li>
-</ul>
-
-<br><br>
-<h3 class="fragment">Team reasons</h3>
-<ul>
-  <li class="fragment">Helps onboard CSS-savvy teammates.</li>
-  <li class="fragment">SCSS allows you to convert a project<br> piece by piece even in-progress</li>
-</ul>
+<div class="columns">
+  <div class="fragment">
+    <h3>Tech reasons</h3>
+    <ul class="listreset centered divided">
+      <li>Easier to understand<br />if you know CSS</li>
+      <li>Easier to integrate<br />in the real-world</li>
+    </ul>
+  </div>
+  <div class="fragment">
+    <h3>Team reasons</h3>
+    <ul class="listreset centered divided">
+      <li>Helps onboard<br />CSS-savvy teammates.</li>
+      <li>With SCSS, you can convert<br />a project piecemeal.</li>
+    </ul>
+  </div>
+</div>

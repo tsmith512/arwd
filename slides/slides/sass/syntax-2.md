@@ -1,23 +1,24 @@
-### <code>.sass</code> - whitespace sensitive
+## Syntaxes compared:
 
-<br>
-
-```scss
-// .sass
+<ul class="two-col" style="margin-top: 0;">
+  <li>
+    <h3><code>.sass</code> <small>Whitespace Sensitive</small></h3>
+<pre><code class="language-scss">// .sass
 .my-selector
   font-size: 2em
   background: #333
   font-family: $monospace
-```
 
-```scss
-// .scss
+</code></pre>
+  </li>
+  <li>
+    <h3><code>.scss</code> <small>Superset of CSS</small></h3>
+<pre><code class="language-scss">// .scss
 .my-selector {
   font-size: 2em;
   background: #333;
   font-family: $monospace;
 }
-```
-
-
-### <code>.scss</code> - superset of CSS
+</code></pre>
+  </li>
+</ul>

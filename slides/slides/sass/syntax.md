@@ -1,6 +1,5 @@
 ## Syntax
 
-<br>
-Sass has TWO syntaxes:
+Sass has **two** syntaxes:
 
-<code>.sass</code> <em style="font-size: .5em; padding-right: .1em; " class="subdued">and</em> <code>.scss</code>
+<code>.sass</code> and <code>.scss</code>

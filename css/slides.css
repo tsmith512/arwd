@@ -469,15 +469,21 @@ pre.line-numbers > code {
   text-decoration: underline !important;
 }
 .reveal h2 {
-  text-transform: none;
   color: #7f7f7f;
+}
+.reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  text-transform: none;
+}
+.reveal h1 small, .reveal h2 small, .reveal h3 small, .reveal h4 small, .reveal h5 small, .reveal h6 small {
+  display: block;
+  font-size: 0.875em;
 }
 .reveal p {
   margin: 1em 0;
 }
 .reveal p.large {
-  border-bottom: 1px solid #bbb;
-  border-top: 1px solid #fff;
+  border-bottom: 2px solid #bbb;
+  border-top: 2px solid #fff;
   padding: 0.5em 0;
   font-size: 36px;
   font-weight: 700;
@@ -492,11 +498,11 @@ pre.line-numbers > code {
 }
 .reveal p.large:before {
   top: -2px;
-  border-top: 1px solid #bbb;
+  border-top: 2px solid #bbb;
 }
 .reveal p.large:after {
   bottom: -2px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .reveal p.small {
   border-style: dotted;
@@ -511,6 +517,14 @@ pre.line-numbers > code {
   font-size: 18px;
   font-style: italic;
 }
+.reveal a.reference {
+  display: block;
+  line-height: 1;
+  font-size: 1.5em;
+  margin: 1em auto 0;
+  padding: 0.25em 0.75em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.375);
+}
 .reveal a[target="_blank"]:after {
   display: inline-block;
   vertical-align: middle;
@@ -518,7 +532,7 @@ pre.line-numbers > code {
   width: 1em;
   margin-left: 0.5em;
   height: 1em;
-  background-image: url("../slides/gfx/new-window.svg");
+  background-image: url("../slides/img/new-window.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -533,11 +547,40 @@ pre.line-numbers > code {
   margin: 1em 0;
   padding: 0;
 }
-.reveal ul.two-col li {
+.reveal ul.two-col > li {
   box-sizing: border-box;
   text-align: center;
   padding: 1em;
   margin-bottom: 0;
+}
+.reveal ul.listreset {
+  margin: 0;
+}
+.reveal ul.listreset li {
+  margin: 0;
+  list-style: none;
+}
+.reveal ul.divided {
+  display: block;
+  width: auto;
+  border-top: 2px solid #bbb;
+  border-bottom: 2px solid #fff;
+}
+.reveal ul.divided li {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0 !important;
+  border-bottom: 2px solid #bbb;
+  border-top: 2px solid #fff;
+}
+.reveal .centered {
+  text-align: center;
+}
+.reveal .columns > * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
 }
 .reveal .bold {
   font-weight: 600;
