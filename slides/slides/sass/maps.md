@@ -1,15 +1,14 @@
-## Sass Maps
+## Maps
 
-### Only available in Sass 3.3+
+<pre><code class="language-scss">$colors: (
+  background: #1A1610,
+  foreground: #E6D6BC,
+  highlight:  #F05983,
+);
 
-```scss
-$colors: (
-  header: #b06,
-  text: #334,
-  footer: #666777,
-)
+body {
+  background: map-get($colors, background);
+  color: map-get($colors, foreground);
+}</code></pre>
 
-p {
-  color: map-get($colors, text)
-}
-```
+<p class="small">Only available in Sass 3.3+. Most like an associative array. Required by Singularity.</p>
