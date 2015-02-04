@@ -402,7 +402,7 @@ pre.line-numbers > code {
   text-align: right;
 }
 
-.reveal ul.two-col, .reveal .columns {
+.reveal ul.two-col, .reveal .columns, .reveal .mid-columns {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -432,7 +432,7 @@ pre.line-numbers > code {
   -ms-flex-align: stretch;
   align-items: stretch;
 }
-.reveal ul.two-col > *, .reveal .columns > * {
+.reveal ul.two-col > *, .reveal .columns > *, .reveal .mid-columns > * {
   width: 50%;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -441,7 +441,7 @@ pre.line-numbers > code {
   flex: 1 1 auto;
 }
 
-#flossie .columns, #her-resume .columns {
+.reveal .mid-columns, #flossie .columns, #her-resume .columns {
   -webkit-box-align: center;
   -moz-box-align: center;
   -webkit-align-items: center;
@@ -517,6 +517,12 @@ pre.line-numbers > code {
   font-size: 18px;
   font-style: italic;
 }
+.reveal p.filename {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 0;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+}
 .reveal a.reference {
   display: block;
   line-height: 1;
@@ -524,6 +530,9 @@ pre.line-numbers > code {
   margin: 1em auto 0;
   padding: 0.25em 0.75em;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.375);
+}
+.reveal a.reference:hover {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 .reveal a[target="_blank"]:after {
   display: inline-block;
@@ -576,7 +585,7 @@ pre.line-numbers > code {
 .reveal .centered {
   text-align: center;
 }
-.reveal .columns > * {
+.reveal .columns > *, .reveal .mid-columns > * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -587,6 +596,12 @@ pre.line-numbers > code {
 }
 .reveal pre {
   font-size: 0.75em;
+}
+.reveal pre code {
+  max-height: none;
+}
+.reveal .fourkitchens {
+  color: #35AA4E;
 }
 
 .intro-tsmith body {
@@ -652,7 +667,7 @@ pre.line-numbers > code {
 .idea body section.present h1 {
   color: #FFFFFF;
 }
-.idea body section.present a {
+.idea body section.present a, .idea body section.present a:hover {
   color: white;
 }
 .idea body section.present p {

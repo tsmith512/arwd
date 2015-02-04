@@ -1,15 +1,14 @@
 ## Comments
 
-```scss
-/*
-* This is a standard, multi-line comment
-* that will appear in your final .css file
-*
-* Use multi-line comments to mark major headings or partials
-*/
+<pre><code class="language-scss">/*
+ * Standard / multi-line comments will appear in your final CSS file!
+ * Use these comments to mark major sections or separate partials.
+ */
 
-// Single-line comments will NOT appear in your final .css file
-// Use single-line comments for developer notes
-```
+// Double-slash / single-line comments <em>WON'T</em> appear in your final CSS!
+// Use these comments for developer notes.</code></pre>
 
-Generally, we leave a standard, multi-line comment on the top of each partial. This will help with debugging because we will always know what partial we are looking at.
+<p class="small">At <span class="fourkitchens">Four Kitchens</span>, we add a
+  multi-line comment at the top of each partial. This will help with debugging
+  because we will always know what partial we are looking at. When CSS is later
+  minified, these will get stripped out, too.</p>
