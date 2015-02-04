@@ -647,15 +647,15 @@ pre.line-numbers > code {
 .theatre body section.present h1, .theatre body section.present h2, .theatre body section.present p {
   color: #ddd;
 }
-.theatre body section.present p {
+.theatre body section.present p.large {
   padding: 2em;
   border-top: 8px solid #333;
   border-bottom: 8px solid #333;
 }
-.theatre body section.present p:before, .theatre body section.present p:after {
+.theatre body section.present p.large:before, .theatre body section.present p.large:after {
   display: none;
 }
-.theatre body section.present p img {
+.theatre body section.present p.large img {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
