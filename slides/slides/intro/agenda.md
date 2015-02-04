@@ -1,14 +1,15 @@
-## Agenda
+# Agenda
 
-* 9:00 - Personal intros and agenda
-* 9:10 - Intro to Sass+Compass
-* 9:50 - Gem and dependency management
-* 10:15 - Quick Break
-* 10:30 - Media-queries: Breakpoint
-<em style="display: block; padding: .4em 0; text-align: center; color: #999; ">12:10 - Lunch for 75 minutes</em>
-* 13:00 - Singularity and The Grid
-* 14:30 - Advanced Singularity Grids
-* 15:00 - Quick Break
-* 15:15 - Intro to Toolkit
-* 15:30 - Yeoman Sub-theme Generation
-* 16:50 - Wrap Up / Course Evaluations
+* <span class="time"><code>9:00</code></span> <span class="item">Personal intros and agenda</span>
+* <span class="time"><code>9:10</code></span> <span class="item">Intro to Sass &amp; Compass</span>
+* <span class="time"><code>9:50</code></span> <span class="item">Gem &amp; Dependency Management</span>
+* <span class="break time"><code>10:15</code></span> <span class="break item">Quick Break</span>
+* <span class="time"><code>10:30</code></span> <span class="item">Media-queries with Breakpoint</span>
+* <span class="break time"><code>12:10</code></span> <span class="break item">Lunch for 75 minutes</span>
+* <span class="time"><code>13:00</code></span> <span class="item">The Grid with Singularity</span>
+* <span class="time"><code>14:30</code></span> <span class="item">Advanced Singularity Grids</span>
+* <span class="break time"><code>15:00</code></span> <span class="break item">Quick Break</span>
+* <span class="time"><code>15:15</code></span> <span class="item">Intro to Toolkit</span>
+* <span class="time"><code>15:30</code></span> <span class="item">Yeoman Sub-theme Generation</span>
+* <span class="time"><code>16:50</code></span> <span class="item">Wrap Up / Course Evaluations</span>
+

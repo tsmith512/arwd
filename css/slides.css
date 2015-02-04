@@ -671,6 +671,37 @@ pre.line-numbers > code {
   box-shadow: 0 0 50px black;
 }
 
+html.agenda ul {
+  border-top: 4px solid #d6d6d6;
+  border-bottom: 4px solid #d6d6d6;
+  padding: 0.5em 0;
+  margin: 0 auto !important;
+  width: 20em;
+}
+html.agenda ul li {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 0;
+  margin: 0 !important;
+  list-style: none;
+  font-size: 0.825em;
+}
+html.agenda ul li .time {
+  width: 15%;
+  float: left;
+  font-weight: 600;
+  text-align: right;
+}
+html.agenda ul li .item {
+  width: 80%;
+  float: right;
+}
+html.agenda ul li .break {
+  padding: 0.125em 0;
+  color: #006DAF;
+  font-style: italic;
+}
+
 html.list-big ul {
   border-top: 3px solid #d6d6d6;
   border-bottom: 3px solid #fff;

@@ -381,6 +381,42 @@ $selectionColor: #fff;
   }
 }
 
+html.agenda { // Add specificity to fight Reveal
+  ul {
+    border-top: 4px solid #d6d6d6;
+    border-bottom: 4px solid #d6d6d6;
+    padding: 0.5em 0;
+    margin: 0 auto !important;
+    width: 20em;
+
+    li {
+      @include clearfix;
+      padding: 0;
+      margin: 0 !important; // Reveal adds margin with !important
+      list-style: none;
+      font-size: 0.825em;
+
+      .time {
+        width: 15%;
+        float: left;
+        font-weight: 600;
+        text-align: right;
+      }
+
+      .item {
+        width: 80%;
+        float: right;
+      }
+
+      .break {
+        padding: 0.125em 0;
+        color: #006DAF; //lighten($grey-dk, 30%);
+        font-style: italic;
+      }
+    }
+  }
+}
+
 html.list-big {
   ul {
     border-top: 3px solid #d6d6d6;
