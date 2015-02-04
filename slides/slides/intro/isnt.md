@@ -1,5 +1,5 @@
-## What This Class Isn't
+# This Class Is Not
 
-* Introduction to Responsive Web Design
-* Training on CSS Systems (like Twitter Bootstrap or Zurb Foundation)
+* Intro to Responsive Web Design
+* Training on CSS Systems <small>(like Twitter Bootstrap or Zurb Foundation)</small>
 * Drupal Theming

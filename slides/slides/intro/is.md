@@ -1,5 +1,5 @@
-## What This Class Is
+# This Class Is
 
-* Advanced level class on Responsive Web Design
-* Look at modern tools, techniques, and best practices
-* How to develop with Sass / Compass
+* Advanced class on Responsive Web Design
+* Look at modern tools, techniques, best practices
+* How to develop with Sass and Compass
