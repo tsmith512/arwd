@@ -570,6 +570,18 @@ pre.line-numbers > code {
   text-align: left;
 }
 
+.intro-matt body {
+  background-image: url("../slides/img/intro-matt.jpg");
+  background-size: contain;
+  background-position: center bottom;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+.intro-matt body section.present {
+  padding-bottom: 20em;
+  text-align: center;
+}
+
 #goals .two-col li {
   padding-top: 0;
 }
@@ -610,11 +622,45 @@ pre.line-numbers > code {
   display: none;
 }
 
+.credits body {
+  background-color: #333;
+}
+.credits body section.present h1, .credits body section.present p {
+  color: #CCC;
+}
+.credits body section.present a {
+  color: white;
+  text-decoration: underline;
+}
+.credits body section.present p {
+  padding: 2em;
+  border-top: 8px solid #666;
+  border-bottom: 8px solid #666;
+}
+.credits body section.present p:before, .credits body section.present p:after {
+  display: none;
+}
+
 .theatre body {
   background-color: #222;
 }
 .theatre body section.present h1, .theatre body section.present h2, .theatre body section.present p {
   color: #ddd;
+}
+.theatre body section.present p {
+  padding: 2em;
+  border-top: 8px solid #333;
+  border-bottom: 8px solid #333;
+}
+.theatre body section.present p:before, .theatre body section.present p:after {
+  display: none;
+}
+.theatre body section.present p img {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  background: 0;
 }
 .theatre body section.present a {
   color: white;

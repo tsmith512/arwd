@@ -3,7 +3,7 @@
 
 **tsmith512** on
 [Drupal.org](http://drupal.org/u/tsmith512), <br/>
-[Github](https://github.com/tsmith512),
+[GitHub](https://github.com/tsmith512),
 [Twitter](https://twitter.com/tsmith512),
 [LinkedIn](https://linkedin.com/in/tsmith512), <br/>
 [Behance](https://behance.net/tsmith512),

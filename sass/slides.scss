@@ -244,6 +244,21 @@ $selectionColor: #fff;
   }
 }
 
+.intro-matt body {
+  background: {
+    image: url('../slides/img/intro-matt.jpg');
+    size: contain;
+    position: center bottom;
+    color: white;
+    repeat: no-repeat;
+  }
+
+  section.present {
+    padding-bottom: 20em;
+    text-align: center;
+  }
+}
+
 
 #goals {
   .two-col li {
@@ -294,11 +309,36 @@ $selectionColor: #fff;
     }
 
     p {
-      // background-color: darken(#4180AB, 10%);
       color: #E4EBF0;
       padding: 2em;
       border-top: 8px solid #8AB3CF;
       border-bottom: 8px solid #8AB3CF;
+
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.credits body {
+  background-color: #333;
+
+  section.present {
+
+    h1, p {
+      color: #CCC;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    p {
+      padding: 2em;
+      border-top: 8px solid #666;
+      border-bottom: 8px solid #666;
 
       &:before, &:after {
         display: none;
@@ -313,6 +353,22 @@ $selectionColor: #fff;
   section.present {
     h1, h2, p {
       color: #ddd;
+    }
+
+    p {
+      padding: 2em;
+      border-top: 8px solid #333;
+      border-bottom: 8px solid #333;
+
+      &:before, &:after {
+        display: none;
+      }
+
+      img {
+        @include box-shadow(none);
+        border: 0;
+        background: 0;
+      }
     }
 
     a {

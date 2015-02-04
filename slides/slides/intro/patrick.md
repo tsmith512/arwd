@@ -3,5 +3,5 @@
 
 **patrickcoffeyo** on
 [Drupal.org](http://drupal.org/user/2837945), <br/>
-[Github](http://github.com/patrickocoffeyo), and
+[GitHub](http://github.com/patrickocoffeyo), and
 [Twitter](http://twitter.com/patrickocoffeyo).
