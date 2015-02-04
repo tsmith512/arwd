@@ -729,6 +729,27 @@ pre.line-numbers > code {
   box-shadow: 0 0 50px black;
 }
 
+.pause body {
+  background-color: #2c283b;
+}
+.pause body section.present h1, .pause body section.present h2 {
+  color: #F2D680;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.pause body section.present ul, .pause body section.present p {
+  color: #DDD;
+}
+.pause body section.present a {
+  color: #F3A358;
+}
+.pause body section.present a:hover {
+  color: #F2D680;
+}
+.pause body section.present p.small {
+  color: #b64c78;
+  border-color: #15131c;
+}
+
 html.agenda ul {
   border-top: 4px solid #d6d6d6;
   border-bottom: 4px solid #d6d6d6;

@@ -454,6 +454,34 @@ $selectionColor: #fff;
   }
 }
 
+.pause body {
+  background-color: darken(#37324A, 5%);
+
+  section.present {
+
+    h1, h2 {
+      color: #F2D680;
+      @include text-shadow(1px 1px 0px rgba(0, 0, 0, 0.5))
+    }
+
+    ul, p {
+      color: #DDD;
+    }
+
+    a {
+      color: #F3A358;
+      &:hover {
+        color: #F2D680;
+      }
+    }
+
+    p.small {
+      color: lighten(#933C60, 10%);
+      border-color: darken(#37324A, 15%);
+    }
+  }
+}
+
 html.agenda { // Add specificity to fight Reveal
   ul {
     border-top: 4px solid #d6d6d6;
