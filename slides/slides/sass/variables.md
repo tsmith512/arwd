@@ -2,7 +2,7 @@
 
 
 ```scss
-$blue: #00ff00;
+$blue: #0000ff;
 $monospace: "Source Code Pro", "Courier New", monospace;
 $default-fontsize: 1em;
 $default-padding: 2 * $default-fontsize;
