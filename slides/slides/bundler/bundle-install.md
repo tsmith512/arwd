@@ -1,7 +1,13 @@
-The <code>Gemfile</code> that comes with the project will tell Bundler exactly what versions of what gems to use. Use the following command to create a <code>Gemfile.lock</code> file within your theme to install gem dependencies you may not already have and to lock each gem version.
+## The Gemfile
 
-```bash
-bundle install
-```
+A project's <code>Gemfile</code> tells Bundler which versions <br />
+or major/minor releases of which gems to use.
 
-You should <b>NEVER</b> run "sudo bundle install"
+A <code>Gemfile.lock</code> file in your project locks <br />
+<em>exact</em> versions of requested Gems <em>and all their dependencies:</em>
+
+<pre><code class="language-bash">bundle install</code></pre>
+
+<p class="small">
+  You should <b>never</b> run "sudo bundle install"
+</p>

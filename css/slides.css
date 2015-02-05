@@ -689,6 +689,10 @@ pre.line-numbers > code {
 .idea body section.present p:before, .idea body section.present p:after {
   display: none;
 }
+.idea body section.present p img {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #2c5774;
+}
 
 .credits body {
   background-color: #333;

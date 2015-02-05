@@ -403,6 +403,11 @@ $selectionColor: #fff;
       &:before, &:after {
         display: none;
       }
+
+      img {
+        background: rgba(255,255,255,0.8);
+        border-color: darken(#4180AB, 15%);
+      }
     }
   }
 }
