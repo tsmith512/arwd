@@ -5,9 +5,9 @@
     <ul>
       <li>SCSS vs. Sass Syntax</li>
       <li>Variables and Maps</li>
+      <li>Nesting</li>
       <li>Functions</li>
-      <li>Mixins</li>
-      <li>Extendables</li>
+      <li>Mixins, Extendables, Caution</li>
       <li>Partials</li>
       <li>Comments</li>
     </ul>
