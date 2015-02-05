@@ -591,6 +591,11 @@ pre.line-numbers > code {
   box-sizing: border-box;
   padding: 1em;
 }
+.reveal .columns > div > pre, .reveal .mid-columns > div > pre {
+  margin-left: -1em;
+  margin-right: -1em;
+  width: auto;
+}
 .reveal .bold {
   font-weight: 600;
 }
@@ -612,6 +617,45 @@ pre.line-numbers > code {
 }
 .reveal img {
   height: auto;
+}
+.reveal ul.list-big, .reveal ol.list-big {
+  border-top: 3px solid #d6d6d6;
+  border-bottom: 3px solid #fff;
+  counter-reset: list-counter;
+}
+.reveal ul.list-big li, .reveal ol.list-big li {
+  font-size: 1.125em;
+  padding: 0.75em 1em;
+  margin: 0 !important;
+  list-style: none;
+  text-align: center;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #d6d6d6;
+}
+.reveal ul.list-big li small, .reveal ol.list-big li small {
+  display: block;
+  font-size: 0.75em;
+  font-style: italic;
+}
+.reveal ol.list-big li {
+  position: relative;
+  padding-left: 2em;
+}
+.reveal ol.list-big li:before {
+  content: counter(list-counter);
+  counter-increment: list-counter;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 0.375em 0.125em 0.375em;
+  font-size: 0.75em;
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 800;
+  font-style: italic;
+  background-color: #fff;
+  color: #999;
+  border-left: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .intro-tsmith body {
@@ -792,24 +836,5 @@ html.agenda ul li .item {
 html.agenda ul li .break {
   padding: 0.125em 0;
   color: #006DAF;
-  font-style: italic;
-}
-
-html.list-big ul {
-  border-top: 3px solid #d6d6d6;
-  border-bottom: 3px solid #fff;
-}
-html.list-big ul li {
-  font-size: 1.125em;
-  padding: 0.75em 1em;
-  margin: 0 !important;
-  list-style: none;
-  text-align: center;
-  border-top: 3px solid #fff;
-  border-bottom: 3px solid #d6d6d6;
-}
-html.list-big ul li small {
-  display: block;
-  font-size: 0.75em;
   font-style: italic;
 }

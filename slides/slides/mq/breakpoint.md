@@ -1,27 +1,32 @@
 ## Breakpoint
 
-<a href="https://github.com/Team-Sass/breakpoint">Breakpoint</a> is a Compass extension. It makes<br> media queries much easier to maintain.
+<a href="https://github.com/Team-Sass/breakpoint">Breakpoint</a>, a Compass
+extension, <br /> makes media queries easier to write and maintain.
 
-```scss
-$nav-lg: 680px;
+<div class="columns">
+  <div><pre><code class="language-scss">@import "breakpoint";
 
-.main-nav {
+$two-columns: 680px;
+
+.first-column {
   width: 100%;
 
-  @include breakpoint($nav-lg) {
-    width: 60%;
-    margin: 0 auto;
+  @include breakpoint($two-columns) {
+    width: 50%;
+    float: left;
   }
-}
-```
-```css
-.main-nav {
+}</code></pre></div>
+  <div><pre><code class="language-css">.first-column {
   width: 100%;
 }
 @media (min-width: 680px) {
-  .main-nav {
-    width: 60%;
-    margin: 0 auto;
+  .first-column {
+    width: 50%;
+    float: left;
   }
 }
-```
+
+
+
+</code></pre></div>
+</div>
