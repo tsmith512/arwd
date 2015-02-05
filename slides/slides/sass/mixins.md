@@ -31,4 +31,4 @@
   </div>
 </div>
 
-<p class="small">Mixins are like functions, but they return blocks of CSS.</p>
+<p class="small">Mixins are like functions, but they return <strong>blocks of CSS</strong>.</p>
