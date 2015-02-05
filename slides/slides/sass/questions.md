@@ -1,4 +1,4 @@
-## Questions about Sass?
+# Questions about Sass?
 
 <div class="mid-columns">
   <div>
