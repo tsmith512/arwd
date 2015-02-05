@@ -1,16 +1,35 @@
 ## Explicit Test / Value
 
-If one value is a string, assume a feature/value pair
+Pass a string and a value for a feature / value pair.
 
-```scss
-$too-damn-wide: max-width 1000px;
+<div class="columns">
+  <div><pre><code class="language-scss">// SCSS:
+$tiny-pager: max-width 620px;
 
-#hero-image {
-  max-width: 100%;
-  margin: 2em 0;
-  
-  @include breakpoint($too-damn-wide) {
-    margin: 0.5em 0;
+#pager {
+  @include breakpoint($tiny-pager) {
+    // Drop all the other pager links
+    a:not(.prev):not(.next):not(.current) {
+      display: none;
+    }
   }
 }
-```
+</code></pre></div>
+  <div><pre><code class="language-css">/\* Compiled CSS \*/
+@media (max-width: 620px) {
+  #pager a:not(.prev):not(.next):not(.current) {
+    display: none;
+  }
+}
+</code></pre>
+
+  <p><code>$tiny-pager</code> specifies the test instead of defaulting to min-width.</p>
+
+  </div>
+</div>
+
+<p class="small">
+  This example is the opposite of mobile-first; these styles are
+  <strong>specific</strong> to small screens. But this can be useful when
+  building specific styles that would be difficult to override.
+</p>
