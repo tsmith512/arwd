@@ -8,7 +8,7 @@ $medium-header: 460px 780px;
 
 #header {
   font-size: 2em;
-  @include breakpoint($big-header) {
+  @include breakpoint($medium-header) {
     font-size: 2.5em;
   }
 }

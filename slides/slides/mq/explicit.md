@@ -11,9 +11,7 @@ $tiny-pager: max-width 620px;
     // Drop all the other pager links
     a:not(.prev):not(.next):not(.current) {
       display: none;
-    }
-  }
-}
+    } } }
 </code></pre></div>
   <div><pre><code class="language-css">/\* Compiled CSS \*/
 @media (max-width: 620px) {
@@ -21,9 +19,10 @@ $tiny-pager: max-width 620px;
     display: none;
   }
 }
-</code></pre>
 
-  <p><code>$tiny-pager</code> specifies the test instead of defaulting to min-width.</p>
+
+
+</code></pre>
 
   </div>
 </div>
