@@ -1,5 +1,8 @@
-## Silver challenge:
+## Silver Challenge:
 
-Create a media query that will change the color scheme when:
+<p class="large">
+Use Breakpoint to create a media query: <br /><br />
 
-* The website is in portrait
+Increase body <code>line-height</code> on <br />
+portrait screens taller than 600 pixels.
+</p>

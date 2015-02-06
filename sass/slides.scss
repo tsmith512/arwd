@@ -589,6 +589,76 @@ html.agenda { // Add specificity to fight Reveal
   }
 }
 
-html.list-big {
+#{nest('.bronze, .silver, .gold', 'body', 'h1, h2')} {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
 
+#{nest('.bronze, .silver, .gold', 'body', 'p.large')} {
+  color: #eee;
+  background-color: rgba(0,0,0,0.8);
+  @include box-shadow(5px 0 40px rgba(0,0,0,0.35));
+  padding: 2em;
+  border-top: 8px solid;
+  border-bottom: 8px solid;
+
+  &:before, &:after {
+    display: none;
+  }
+}
+
+.bronze body {
+  background-color: #C89F5F;
+  @include background-image(linear-gradient(to bottom right, lighten(#C89F5F, 7.5%), darken(#C89F5F, 10%)));
+
+  #{headings(1,2)} {
+    color: darken(#C89F5F, 30%);
+  }
+
+  p.large {
+    border-top-color: darken(#C89F5F, 25%);
+    border-bottom-color: darken(#C89F5F, 25%);
+
+    em {
+      color: #C89F5F;
+    }
+  }
+}
+
+.silver body {
+  background-color: #D7D7D7;
+  @include background-image(linear-gradient(to bottom right, lighten(#D7D7D7, 5%), darken(#D7D7D7, 15%)));
+
+  #{headings(1,2)} {
+    color: darken(#D7D7D7, 35%);
+  }
+
+  p.large {
+    border-top-color: darken(#D7D7D7, 25%);
+    border-bottom-color: darken(#D7D7D7, 25%);
+
+    em {
+      color: #D7D7D7;
+    }
+  }
+}
+
+.gold body {
+  background-color: desaturate(#F0D67C, 10%);
+  @include background-image(linear-gradient(to bottom right, #F0D67C, darken(desaturate(#F0D67C, 10%), 20%)));
+
+  #{headings(1,2)} {
+    color: darken(#F0D67C, 40%);
+  }
+
+  p.large {
+    border-top-color: darken(#F0D67C, 25%);
+    border-bottom-color: darken(#F0D67C, 25%);
+
+    em {
+      color: #F0D67C;
+    }
+  }
 }

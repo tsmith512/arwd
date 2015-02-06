@@ -1,9 +1,7 @@
-## Bronze challenge:
+## Bronze Challenge:
 
-<br>
+<p class="large">
+Use Breakpoint to create a media query: <br /><br />
 
-Create a media query that will increase the body's font size when:
-
-* A chosen <code>min-width</code>
-
-<br>
+Increase body <code>font-size</code> on screens wider than 800 pixels.
+</p>
