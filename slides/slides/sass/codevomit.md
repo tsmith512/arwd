@@ -4,6 +4,6 @@
   Mixins and Extends are awesome, but watch the output: <br/><br/>
 
   Overusing mixins can generate repetitive code. <br />
-  Overusing extends can greatly elongate extended selector.
+  Overusing extends can greatly elongate the extended selector.
 </p>
 
