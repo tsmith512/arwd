@@ -504,6 +504,11 @@ pre.line-numbers > code {
   bottom: -2px;
   border-bottom: 2px solid #fff;
 }
+.reveal p.large small {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+}
 .reveal p.small {
   border-style: dotted;
   border-color: #bbb;

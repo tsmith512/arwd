@@ -1,7 +1,7 @@
 ## The Box Model
 
-<img class="transparent" src="img/boxmodel.png" alt="Box Model">
+<img src="img/boxmodel.png" alt="Box Model" width="485" height="393" />
 
-```scss
+<pre><code class="language-scss">
 *, *:before, *:after { @include box-sizing('border-box'); }
-```
+</code></pre>
