@@ -1,9 +1,16 @@
 ## Gold challenge:
 
-Change Visual Order Without Changing Source Order
+<div class="large">
+  <p>Investigate: can you change the visual order without changing the source order?
+    Using Singularity, to try to:</p>
 
-* Make Media span the first two columns
-* Make Ingredients span the next three columns
-* Make Directions span the last five columns
+  <ul>
+    <li>Make <em>Media</em> span the first two columns</li>
+    <li>Make <em>Ingredients</em> span the next three columns</li>
+    <li>Make <em>Directions</em> span the last five columns</li>
+  </ul>
+</div>
 
-@TODO: You can't do this without isolation and it confused the hell out of lots of people; reword?
+<p class="small">
+  <strong>Timeout:</strong> 5 minutes. Don't cheat and look ahead. That spoils the fun.
+</p>

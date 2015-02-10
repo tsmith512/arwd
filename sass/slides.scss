@@ -671,6 +671,14 @@ html.agenda { // Add specificity to fight Reveal
   }
 }
 
+%challenges-footer {
+  border-top: 0;
+  border-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Archer SSm A', 'Archer SSm B';
+}
+
 %challenges {
   h1, h2 {
     @extend %challenge-headers;
@@ -682,6 +690,10 @@ html.agenda { // Add specificity to fight Reveal
 
   ol, ul {
     @extend %challenge-lists;
+  }
+
+  p.small {
+    @extend %challenges-footer;
   }
 }
 
@@ -708,6 +720,10 @@ html.agenda { // Add specificity to fight Reveal
       color: #C89F5F;
     }
   }
+
+  .small {
+    color: darken(#C89F5F, 35%);
+  }
 }
 
 .silver body {
@@ -733,6 +749,10 @@ html.agenda { // Add specificity to fight Reveal
       color: darken(#A1A1A1, 5%);
     }
   }
+
+  .small {
+    color:  darken(#D7D7D7, 40%);
+  }
 }
 
 .gold body {
@@ -757,5 +777,9 @@ html.agenda { // Add specificity to fight Reveal
     li:before {
       color: #F0D67C;
     }
+  }
+
+  .small {
+    color:  darken(#F0D67C, 45%);
   }
 }
