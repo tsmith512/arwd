@@ -857,7 +857,7 @@ html.agenda ul li .break {
   font-style: italic;
 }
 
-.bronze body h1, .bronze body h2, .silver body h1, .silver body h2, .gold body h1, .gold body h2 {
+.bronze body h1, .silver body h1, .gold body h1, .bronze body h2, .silver body h2, .gold body h2 {
   font-family: 'Archer SSm A', 'Archer SSm B';
   font-style: italic;
   font-weight: 800;
@@ -875,7 +875,7 @@ html.agenda ul li .break {
   border-top: 8px solid;
   border-bottom: 8px solid;
 }
-.bronze body .large:before, .bronze body .large:after, .silver body .large:before, .silver body .large:after, .gold body .large:before, .gold body .large:after {
+.bronze body .large:before, .silver body .large:before, .gold body .large:before, .bronze body .large:after, .silver body .large:after, .gold body .large:after {
   display: none;
 }
 .bronze body .large :first-child, .silver body .large :first-child, .gold body .large :first-child {
@@ -885,23 +885,36 @@ html.agenda ul li .break {
   margin-bottom: 0;
 }
 
-.bronze body ul, .bronze body ol, .silver body ul, .silver body ol, .gold body ul, .gold body ol {
+.bronze body ol, .silver body ol, .gold body ol, .bronze body ul, .silver body ul, .gold body ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.bronze body ul li, .bronze body ol li, .silver body ul li, .silver body ol li, .gold body ul li, .gold body ol li {
+.bronze body ol li, .silver body ol li, .gold body ol li, .bronze body ul li, .silver body ul li, .gold body ul li {
   position: relative;
   padding-bottom: 0.5em;
   border-bottom: 1px solid black;
 }
-.bronze body ul li:last-child, .bronze body ol li:last-child, .silver body ul li:last-child, .silver body ol li:last-child, .gold body ul li:last-child, .gold body ol li:last-child {
+.bronze body ol li:last-child, .silver body ol li:last-child, .gold body ol li:last-child, .bronze body ul li:last-child, .silver body ul li:last-child, .gold body ul li:last-child {
   border-bottom: 0;
 }
-.bronze body ul li:before, .bronze body ol li:before, .silver body ul li:before, .silver body ol li:before, .gold body ul li:before, .gold body ol li:before {
+.bronze body ol li:before, .silver body ol li:before, .gold body ol li:before, .bronze body ul li:before, .silver body ul li:before, .gold body ul li:before {
   position: absolute;
   left: -1em;
   content: "\002022";
+  text-shadow: 1px 1px 1px black;
+}
+.bronze body ol:last-child li:last-child, .silver body ol:last-child li:last-child, .gold body ol:last-child li:last-child, .bronze body ul:last-child li:last-child, .silver body ul:last-child li:last-child, .gold body ul:last-child li:last-child {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.bronze body p.small, .silver body p.small, .gold body p.small {
+  border-top: 0;
+  border-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Archer SSm A', 'Archer SSm B';
 }
 
 .bronze body {
@@ -926,6 +939,9 @@ html.agenda ul li .break {
 .bronze body ol li:before, .bronze body ul li:before {
   color: #C89F5F;
 }
+.bronze body .small {
+  color: #57401e;
+}
 
 .silver body {
   background-color: #D7D7D7;
@@ -949,6 +965,9 @@ html.agenda ul li .break {
 .silver body ol li:before, .silver body ul li:before {
   color: #949494;
 }
+.silver body .small {
+  color: #717171;
+}
 
 .gold body {
   background-color: #e9d283;
@@ -971,4 +990,7 @@ html.agenda ul li .break {
 }
 .gold body ol li:before, .gold body ul li:before {
   color: #F0D67C;
+}
+.gold body .small {
+  color: #79610e;
 }
