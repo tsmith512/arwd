@@ -614,14 +614,14 @@ html.agenda { // Add specificity to fight Reveal
   }
 }
 
-#{nest('.bronze, .silver, .gold', 'body', 'h1, h2')} {
+%challenge-headers {
   font-family: 'Archer SSm A', 'Archer SSm B';
   font-style: italic;
   font-weight: 800;
   letter-spacing: -1px;
 }
 
-#{nest('.bronze, .silver, .gold', 'body', '.large')} {
+%challenge-large-content {
   color: #eee;
   background-color: rgba(0,0,0,0.8);
   @include box-shadow(5px 0 40px rgba(0,0,0,0.35));
@@ -643,7 +643,7 @@ html.agenda { // Add specificity to fight Reveal
   }
 }
 
-#{nest('.bronze, .silver, .gold', 'body', 'ul, ol')} {
+%challenge-lists {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -662,10 +662,31 @@ html.agenda { // Add specificity to fight Reveal
     position: absolute;
     left: -1em;
     content: "\002022";
+    @include text-shadow(1px 1px 1px rgba(0,0,0,1));
+  }
+
+  &:last-child li:last-child {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+%challenges {
+  h1, h2 {
+    @extend %challenge-headers;
+  }
+
+  .large {
+    @extend %challenge-large-content;
+  }
+
+  ol, ul {
+    @extend %challenge-lists;
   }
 }
 
 .bronze body {
+  @extend %challenges;
   background-color: #C89F5F;
   @include background-image(linear-gradient(to bottom right, lighten(#C89F5F, 7.5%), darken(#C89F5F, 10%)));
 
@@ -690,6 +711,7 @@ html.agenda { // Add specificity to fight Reveal
 }
 
 .silver body {
+  @extend %challenges;
   background-color: #D7D7D7;
   @include background-image(linear-gradient(to bottom right, lighten(#D7D7D7, 5%), darken(#D7D7D7, 15%)));
 
@@ -714,6 +736,7 @@ html.agenda { // Add specificity to fight Reveal
 }
 
 .gold body {
+  @extend %challenges;
   background-color: desaturate(#F0D67C, 10%);
   @include background-image(linear-gradient(to bottom right, #F0D67C, darken(desaturate(#F0D67C, 10%), 20%)));
 
