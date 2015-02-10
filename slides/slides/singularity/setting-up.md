@@ -1,7 +1,7 @@
-## Setting Up The Grid
+## We _could_ build this with Singularity
 
 
-<pre><code class="language-scss">@include add-grid(12);     // Number of Columns
+<pre><code class="language-scss">@include add-grid(12);    // Number of Columns
 @include add-gutter(1/3); // Gutter to Column ratio, 20px/60px = 1/3</code></pre>
 
 <ul class="list-big">

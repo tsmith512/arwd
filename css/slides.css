@@ -481,6 +481,9 @@ pre.line-numbers > code {
 .reveal p {
   margin: 1em 0;
 }
+.reveal p + .columns, .reveal p + .mid-columns {
+  margin-top: -1em;
+}
 .reveal p.large {
   border-bottom: 2px solid #bbb;
   border-top: 2px solid #fff;
@@ -590,6 +593,9 @@ pre.line-numbers > code {
 .reveal .centered {
   text-align: center;
 }
+.reveal .left {
+  text-align: left;
+}
 .reveal .columns > *, .reveal .mid-columns > * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -607,8 +613,15 @@ pre.line-numbers > code {
 .reveal pre {
   font-size: 0.75em;
 }
+.reveal pre.small {
+  font-size: 0.675em;
+}
 .reveal pre code {
   max-height: none;
+}
+.reveal pre.scroll-y code {
+  overflow-y: scroll;
+  max-height: 350px;
 }
 .reveal .fourkitchens {
   color: #35AA4E;

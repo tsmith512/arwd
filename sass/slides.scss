@@ -130,6 +130,10 @@ $selectionColor: #fff;
 
   p {
     margin: 1em 0;
+
+    + .columns, +.mid-columns {
+      margin-top: -1em;
+    }
   }
 
 
@@ -261,6 +265,10 @@ $selectionColor: #fff;
     text-align: center;
   }
 
+  .left {
+    text-align: left;
+  }
+
   .columns, .mid-columns {
     @extend %flex-two-col;
     > * {
@@ -287,8 +295,19 @@ $selectionColor: #fff;
   pre {
     font-size: 0.75em;
 
+    &.small {
+      font-size: 0.675em;
+    }
+
     code {
       max-height: none;
+    }
+
+    &.scroll-y {
+      code {
+        overflow-y: scroll;
+        max-height: 350px;
+      }
     }
   }
 
