@@ -1,8 +1,11 @@
 ## Silver challenge:
 
-Attach Items to the Grid
+<div class="large">
+  <p>Use Singularity to set the sample content in this grid:</p>
 
-
-* Make Ingredients span the first two columns
-* Make Directions span the next three columns
-* Make Media span the last five columns
+  <ul>
+    <li>Make <em>Ingredients</em> span the first two columns</li>
+    <li>Make <em>Directions</em> span the next three columns</li>
+    <li>Make <em>Media</em> span the last five columns</li>
+  </ul>
+</div>

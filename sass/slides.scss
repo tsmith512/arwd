@@ -137,7 +137,7 @@ $selectionColor: #fff;
   }
 
 
-  p.large {
+  .large {
     border-bottom: 2px solid #bbb;
     border-top: 2px solid #fff;
     padding: 0.5em 0;
@@ -621,16 +621,47 @@ html.agenda { // Add specificity to fight Reveal
   letter-spacing: -1px;
 }
 
-#{nest('.bronze, .silver, .gold', 'body', 'p.large')} {
+#{nest('.bronze, .silver, .gold', 'body', '.large')} {
   color: #eee;
   background-color: rgba(0,0,0,0.8);
   @include box-shadow(5px 0 40px rgba(0,0,0,0.35));
   padding: 2em;
+  margin: 1em 0;
   border-top: 8px solid;
   border-bottom: 8px solid;
 
   &:before, &:after {
     display: none;
+  }
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+#{nest('.bronze, .silver, .gold', 'body', 'ul, ol')} {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  li:before {
+    position: absolute;
+    left: -1em;
+    content: "\002022";
   }
 }
 
@@ -642,11 +673,17 @@ html.agenda { // Add specificity to fight Reveal
     color: darken(#C89F5F, 30%);
   }
 
-  p.large {
+  .large {
     border-top-color: darken(#C89F5F, 25%);
     border-bottom-color: darken(#C89F5F, 25%);
 
     em {
+      color: #C89F5F;
+    }
+  }
+
+  ol, ul {
+    li:before {
       color: #C89F5F;
     }
   }
@@ -660,12 +697,18 @@ html.agenda { // Add specificity to fight Reveal
     color: darken(#D7D7D7, 35%);
   }
 
-  p.large {
+  .large {
     border-top-color: darken(#D7D7D7, 25%);
     border-bottom-color: darken(#D7D7D7, 25%);
 
     em {
-      color: #D7D7D7;
+      color: #A1A1A1;
+    }
+  }
+
+  ol, ul {
+    li:before {
+      color: darken(#A1A1A1, 5%);
     }
   }
 }
@@ -678,11 +721,17 @@ html.agenda { // Add specificity to fight Reveal
     color: darken(#F0D67C, 40%);
   }
 
-  p.large {
+  .large {
     border-top-color: darken(#F0D67C, 25%);
     border-bottom-color: darken(#F0D67C, 25%);
 
     em {
+      color: #F0D67C;
+    }
+  }
+
+  ol, ul {
+    li:before {
       color: #F0D67C;
     }
   }
