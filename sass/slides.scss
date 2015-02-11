@@ -315,6 +315,14 @@ $selectionColor: #fff;
     color: #35AA4E;
   }
 
+  .red {
+    color: #B52C00;
+  }
+
+  .green {
+    color: #259959;
+  }
+
   table {
     font-size: 0.875em;
     width: 100%;
@@ -458,6 +466,31 @@ $selectionColor: #fff;
   }
 }
 
+.win body {
+  background-color: #20663F;
+
+  section.present {
+    h1, p {
+      color: #FCF7D1 !important;
+    }
+
+    p {
+      background-color: #111111;
+      padding-left: 2em;
+      padding-right: 2em;
+      border-top: 8px solid #259959;
+      border-bottom: 8px solid #259959;
+
+      &:before, &:after {
+        display: none;
+      }
+
+      em {
+        color: #259959;
+      }
+    }
+  }
+}
 
 .idea body {
   background-color: #4180AB;

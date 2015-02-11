@@ -626,6 +626,12 @@ pre.line-numbers > code {
 .reveal .fourkitchens {
   color: #35AA4E;
 }
+.reveal .red {
+  color: #B52C00;
+}
+.reveal .green {
+  color: #259959;
+}
 .reveal table {
   font-size: 0.875em;
   width: 100%;
@@ -731,6 +737,26 @@ pre.line-numbers > code {
 }
 .ojo body section.present p:before, .ojo body section.present p:after {
   display: none;
+}
+
+.win body {
+  background-color: #20663F;
+}
+.win body section.present h1, .win body section.present p {
+  color: #FCF7D1 !important;
+}
+.win body section.present p {
+  background-color: #111111;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-top: 8px solid #259959;
+  border-bottom: 8px solid #259959;
+}
+.win body section.present p:before, .win body section.present p:after {
+  display: none;
+}
+.win body section.present p em {
+  color: #259959;
 }
 
 .idea body {
