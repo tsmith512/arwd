@@ -1,11 +1,11 @@
-## The Box Model
+## A Review: The Box Model
 
 <div class="mid-columns">
-  <div>
-    <img src="img/boxmodel.png" alt="Box Model" width="485" height="393" />
+  <div style="width:60%" />
+    <img src="img/box-sizing.png" alt="Box Model" width="650" height="500" style="border:0; box-shadow: none" />
   </div>
-  <div>
-    <pre><code class="language-scss">// SCSS:
+  <div style="width:40%" />
+    <pre class="small"><code class="language-scss">// SCSS:
 \*, \*:before, \*:after {
   @include box-sizing('border-box');
 }
