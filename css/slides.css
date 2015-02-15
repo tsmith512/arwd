@@ -590,6 +590,13 @@ pre.line-numbers > code {
   border-bottom: 2px solid #bbb;
   border-top: 2px solid #fff;
 }
+.reveal ul.small {
+  font-size: 24px;
+}
+.reveal ul.small.divided li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
 .reveal .centered {
   text-align: center;
 }
@@ -681,6 +688,46 @@ pre.line-numbers > code {
   border-left: 1px solid #d6d6d6;
   border-bottom: 1px solid #d6d6d6;
 }
+.reveal blockquote {
+  quotes: "“" "”" "‘" "’";
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  margin: 0 auto;
+  padding: 0;
+}
+.reveal blockquote:before, .reveal blockquote:after, .reveal blockquote footer {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-style: italic;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.reveal blockquote:before, .reveal blockquote:after {
+  position: absolute;
+  font-size: 172px;
+  line-height: 0;
+}
+.reveal blockquote:before {
+  top: 0.25em;
+  left: -0.5em;
+  content: open-quote;
+}
+.reveal blockquote:after {
+  bottom: 0em;
+  right: -0.375em;
+  content: close-quote;
+}
+.reveal blockquote p {
+  border: 0 !important;
+  padding: 0 !important;
+}
+.reveal blockquote p:first-child {
+  margin-top: 0;
+}
+.reveal blockquote a {
+  text-decoration: underline !important;
+}
 
 .intro-tsmith body {
   background-image: url("../slides/img/intro-tsmith.jpg");
@@ -768,16 +815,16 @@ pre.line-numbers > code {
 .idea body section.present a, .idea body section.present a:hover {
   color: white;
 }
-.idea body section.present p {
+.idea body section.present .large, .idea body section.present p {
   color: #E4EBF0;
   padding: 2em;
   border-top: 8px solid #8AB3CF;
   border-bottom: 8px solid #8AB3CF;
 }
-.idea body section.present p:before, .idea body section.present p:after {
+.idea body section.present .large:before, .idea body section.present .large:after, .idea body section.present p:before, .idea body section.present p:after {
   display: none;
 }
-.idea body section.present p img {
+.idea body section.present .large img, .idea body section.present p img {
   background: rgba(255, 255, 255, 0.8);
   border-color: #2c5774;
 }

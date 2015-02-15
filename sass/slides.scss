@@ -261,6 +261,17 @@ $selectionColor: #fff;
     }
   }
 
+  ul.small {
+    font-size: 24px;
+
+    &.divided {
+      li {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+      }
+    }
+  }
+
   .centered {
     text-align: center;
   }
@@ -380,6 +391,53 @@ $selectionColor: #fff;
 
       border-left: 1px solid #d6d6d6;
       border-bottom: 1px solid #d6d6d6;
+    }
+  }
+
+  blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+    @include box-shadow(none);
+    background: transparent;
+    margin: 0 auto;
+    padding: 0;
+
+    &:before, &:after, footer {
+      font-family: 'Archer SSm A', 'Archer SSm B';
+      font-style: italic;
+      font-weight: 400;
+      @include text-shadow(1px 1px 3px rgba(0,0,0,0.3));
+    }
+
+    &:before, &:after {
+      position: absolute;
+      // These font-sizes are specified in pixels because of a strange IE11 edgecase that caused ems to be exploded to tyranosaurusquotes!
+      font-size: 172px;
+      line-height: 0;
+    }
+
+    &:before {
+      top: 0.25em;
+      left: -0.5em;
+      content: open-quote;
+    }
+
+    &:after {
+      bottom: 0em;
+      right: -0.375em;
+      content: close-quote;
+    }
+
+    p {
+      border: 0 !important;
+      padding: 0 !important;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      text-decoration: underline !important;
     }
   }
 }
@@ -505,7 +563,7 @@ $selectionColor: #fff;
       color: white;
     }
 
-    p {
+    .large, p {
       color: #E4EBF0;
       padding: 2em;
       border-top: 8px solid #8AB3CF;

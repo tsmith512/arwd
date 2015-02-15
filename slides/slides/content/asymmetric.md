@@ -1,7 +1,8 @@
 ## Asymmetric Grids
 
-Grids where the columns are not the same size
+<p class="large">Grids where the columns are not the same size</p>
 
-<p class="fragment">Custom grids for each design allow for more unique designs to better highlight your content</p>
+Custom grids for <em>your</em> design allow unique <br />
+possibilities to better highlight <em>your</em> content.
 
-<p class="fragment">[Singularity Extras](github.com/team-sass/singularity-extras) is very useful when working with asymmetric grids</p>
+[Singularity Extras](http://github.com/at-import/singularity-extras) can help build unique asymmetric grids.
