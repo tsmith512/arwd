@@ -9,7 +9,7 @@ Out-of-the-box, Singularity offers two output styles:
         <small>The default, which uses a different layout technique that we'll cover later</small>
       </li>
       <li><strong>Float</strong>
-        <small>A more familiar approach, which many grid systems use</small>
+        <small>A familiar approach using floats and clears, which many grid systems use</small>
       </li>
     </ol>
   </div>

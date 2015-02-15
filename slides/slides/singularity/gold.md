@@ -1,7 +1,7 @@
 ## Gold challenge:
 
 <div class="large">
-  <p>Investigate: can you change the visual order without changing the source order?
+  <p>Investigate: can you change the visual order <em>without</em> changing the source order?
     Using Singularity, to try to:</p>
 
   <ul>
