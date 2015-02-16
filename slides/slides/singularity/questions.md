@@ -7,6 +7,7 @@
       <li>What was 960gs?</li>
       <li>Float output style</li>
       <li>Grid Span Mixin</li>
+      <li>Background Grid</li>
     </ul>
   </div>
   <div>
