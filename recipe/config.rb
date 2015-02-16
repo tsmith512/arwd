@@ -5,7 +5,7 @@ require 'singularitygs'
 require 'singularity-extras'
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "/recipe/"
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"
