@@ -3,5 +3,9 @@
  */
 
 .ingredients {
+  @extend %region;
 
+  ul {
+    @include fancy-list($type: 'ul');
+  }
 }

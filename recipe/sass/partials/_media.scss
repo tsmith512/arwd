@@ -1,18 +1,10 @@
 /**
  * @file _media.scss
- * Special partial for media containers
  */
 
-.fluid-video {
+.media {
+  @extend %region;
+
+  // We'll hide this to begin our work.
   display: none;
-  @extend %media-shared;
-
-  // @include media-border($primary);
-}
-
-.carousel {
-  @extend %media-shared;
-  margin-bottom: .5em;
-
-  // @include media-border($primary);
 }

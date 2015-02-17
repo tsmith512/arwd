@@ -1,0 +1,10 @@
+/**
+ * @file _directions.scss
+ */
+.directions {
+  @extend %region;
+
+  ol {
+    @include fancy-list($type: 'ol');
+  }
+}

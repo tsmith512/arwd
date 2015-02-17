@@ -20,10 +20,12 @@ $webfont-serif: "Open Sans";
 $websafe-serif: "Helvetica", "Arial", sans-serif;
 
 $webfont-dec: "Rokkitt";
-$websafe-dec: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+$websafe-dec: "Rockwell Bold", Geneva, "Courier New", Courier, monospace;
 
-$font-sansserif: append($webfont-serif, $websafe-serif, comma);
-$font-titling: append($webfont-dec, $websafe-dec, comma);
+$font-sansserif:   append($webfont-serif, $websafe-serif, comma);
+$font-titling:     append($webfont-dec, $websafe-dec, comma);
+$font-handwritten: 'Permanent Marker', 'Technical', $websafe-serif;
+$font-script:      'Pacifico', 'Technical', $websafe-serif;
 
 $line-height: 1.375;
 
@@ -31,3 +33,18 @@ $line-height: 1.375;
 // Media Border Options
 //////////////////////////////
 $border-width: .35em;
+
+//////////////////////////////
+// Grid Setup
+//////////////////////////////
+
+@include sgs-change('debug', true);
+@include sgs-change('output', 'float');
+// @include add-gutter();
+// @include add-grid();
+
+//////////////////////////////
+// Breakpoint Setup
+//////////////////////////////
+
+// $my-breakpoint: xyz;

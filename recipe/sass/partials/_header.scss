@@ -4,17 +4,21 @@
  */
 
 header {
-  background: $green;
+  @extend %region;
+
+  @include fancy-border();
+  margin-bottom: 1em;
 
   h1 {
     color: $red;
   }
 
   dl {
-    font-style: italic;
+    font-family: $font-handwritten;
 
     dt, dd {
       display: inline;
+      white-space: nowrap; // With this, and the &nbsp; between dt+dd, they'll break lines together
     }
 
     dd {

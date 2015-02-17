@@ -1,0 +1,11 @@
+/**
+ * @file _links.scss
+ */
+a {
+  color: $red;
+  text-decoration: none;
+
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+}

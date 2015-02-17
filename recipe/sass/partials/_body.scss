@@ -5,4 +5,12 @@
 body {
   font-family: $font-sansserif;
   line-height: $line-height;
+  background-color: $beige;
+  color: $charcoal;
+
+  main {
+    display: block;
+    max-width: 1283px;
+    margin: 0 auto;
+  }
 }
