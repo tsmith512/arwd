@@ -2,41 +2,38 @@
   <head>
     <title>Responsive Training Site</title>
     <meta name="viewport" content="initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-
-    <script type="text/javascript">
-      (function() {
-        var config = {
-          kitId: 'szm7fuq',
-          scriptTimeout: 3000
-        };
-        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-      })();
-    </script>
   </head>
 
   <body>
     <main>
       <article class="recipe">
-        <h1>Spicy Roasted Corn Guacamole</h1>
-        <footer>
-          <span class="active">Active time: <time datetime="M30">30 minutes</time></span>
-          <span class="passive">Passive time: <time datetime="H1">1 hour</time></span>
-          <span class="yield">Yield: 2 cups</span>
-          <span class="difficulty">Difficulty: Easy</span>
-        </footer>
+        <header>
+          <h1>Spicy Roasted Corn Guacamole</h1>
+          <dl>
+            <dt class="active">Active time:</dt>
+              <dd><time datetime="M30">30 minutes</time></dd>
+            <dt class="passive">Passive time:</dt>
+              <dd><time datetime="H1">1 hour</time></dd>
+            <dt class="yield">Yield:</dt>
+              <dd>2 cups</dd>
+            <dt class="difficulty">Difficulty:</dt>
+              <dd>Easy</dd>
+          </dl>
+        </header>
 
         <section class="ingredients">
           <h2>Ingredients</h2>
           <ul>
-            <li><b>2</b> large ripe avocados</li>
-            <li><b>1/2</b> large lime, juiced</li>
-            <li><b>1/4</b> bunch cilantro leaves, chopped</li>
-            <li><b>1</b> head garlic (1/2 will be needed, easier to roast a whole head)</li>
-            <li><b>1</b> ear corn in husk</li>
-            <li><b>1</b> large chipotle pepper in adobo, finely diced</li>
-            <li><b>1/4</b> large red onion, diced</li>
-            <li><b>2</b> shots good clear tequila, such as Patron Silver</li>
+            <li><strong>2</strong> large ripe avocados</li>
+            <li><strong>1/2</strong> large lime, juiced</li>
+            <li><strong>1/4</strong> bunch cilantro leaves, chopped</li>
+            <li><strong>1</strong> head garlic (1/2 will be needed, easier to roast a whole head)</li>
+            <li><strong>1</strong> ear corn in husk</li>
+            <li><strong>1</strong> large chipotle pepper in adobo, finely diced</li>
+            <li><strong>1/4</strong> large red onion, diced</li>
+            <li><strong>2</strong> shots good clear tequila, such as Patron Silver</li>
             <li>Kosher salt, to taste</li>
           </ul>
         </section>

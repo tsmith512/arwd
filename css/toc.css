@@ -426,7 +426,12 @@ pre.line-numbers > code {
 }
 
 header {
-  margin-top: 2em;
+  margin-top: 1em;
+}
+@media (min-width: 500px) {
+  header {
+    margin-top: 2em;
+  }
 }
 header h1 {
   color: #006DAF;

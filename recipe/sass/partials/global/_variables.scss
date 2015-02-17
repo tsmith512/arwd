@@ -7,24 +7,25 @@
 //////////////////////////////
 // Colors
 //////////////////////////////
-$primary:     #adc3d0;
-$secondary:   #cfadd0;
-$tertiary:    #bfd2af;
-$quaternary:  #d7cbb3;
+$red:      #B82E07;
+$teal:     #7EAB8C;
+$green:    #DAE681;
+$beige:    #F9FFC9;
+$charcoal: #393B2E;
 
 //////////////////////////////
 // Fonts
 //////////////////////////////
-$webfont-serif: "ff-tisa-web-pro";
-$websafe-serif: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+$webfont-serif: "Open Sans";
+$websafe-serif: "Helvetica", "Arial", sans-serif;
 
-$webfont-dec: "hwt-american-solid";
+$webfont-dec: "Rokkitt";
 $websafe-dec: "Rockwell Extra Bold", "Rockwell Bold", monospace;
 
-$font-serif: append($webfont-serif, $websafe-serif, comma);
-$font-dec: append($webfont-dec, $websafe-dec, comma);
+$font-sansserif: append($webfont-serif, $websafe-serif, comma);
+$font-titling: append($webfont-dec, $websafe-dec, comma);
 
-$line-height: 1.681em;
+$line-height: 1.375;
 
 //////////////////////////////
 // Media Border Options

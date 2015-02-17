@@ -1,0 +1,25 @@
+/**
+ * @file _header.scss
+ * The general page header
+ */
+
+header {
+  background: $green;
+
+  h1 {
+    color: $red;
+  }
+
+  dl {
+    font-style: italic;
+
+    dt, dd {
+      display: inline;
+    }
+
+    dd {
+      margin-left: 0;
+      margin-right: .5em;
+    }
+  }
+}

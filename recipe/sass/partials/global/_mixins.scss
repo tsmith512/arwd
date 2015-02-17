@@ -4,11 +4,6 @@
 // All of your mixins should go in this file.
 ////////////////////////
 
-@mixin body-coloring($color) {
-  background: light($color);
-  color: dark($color);
-}
-
 @mixin media-border($color, $width: $border-width) {
   border-width: $width 0 $width 0;
   border-color: $color;
