@@ -11,3 +11,7 @@
     <li>Show the background grid in the container</li>
   </ul>
 </div>
+
+<p class="small">
+  Define the specifics of your grid in the <code>variables</code> partial.
+</p>
