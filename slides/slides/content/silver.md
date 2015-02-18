@@ -1,7 +1,7 @@
 ## Silver challenge:
 
 <div class="large">
-  <p>Use Breakpoint and Singularity to create a Medium Layout</p>
+  <p>Use Breakpoint and Singularity to create a Medium Layout:</p>
 
   <ul>
     <li>Based on your <em>content</em>, choose an appropriate <em><code>min-width</code></em> to switch from one column to multiple columns; create a Breakpoint for this.</li>
