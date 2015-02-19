@@ -14,4 +14,9 @@
   </div>
 </div>
 
-<p class="small">The preceding examples are available on <a target="_blank" href="http://sassmeister.com/gist/64f013e2100d79fffb57">SassMeister.com</a></p>
+<p class="small">Examples of the
+  <a target="_blank" href="http://sassmeister.com/gist/64f013e2100d79fffb57">different Asymmetric generators</a>, the
+  <a target="_blank" href="http://sassmeister.com/gist/b592e7567fd4bf2eba18">usage of min-widths to define different grids</a>, <br />
+  and <a target="_blank" href="http://sassmeister.com/gist/352e2db3382d1c306cbf">grid overrides using <code>layout()</code></a> are
+  available on SassMeister.
+</p>

@@ -1,15 +1,15 @@
 ## Global Contexts
 
-Settings <b>grids</b> and <b>gutters</b> set a global context for them, making them available to use without redeclaring them each time they're needed.
+<strong>Grids</strong> and <strong>gutters</strong> exist in a global context. <br/>
+Declare them once; they're available to reuse each time they're needed.
 
-You can set different global contexts to use at different <b>min-width</b> breakpoints
+You can set <em>different global contexts</em> to use at different
+<code>min-width</code> breakpoints.
 
-```scss
+<pre><code class="language-scss">
 @include add-grid(12);
 @include add-grid(2 8 2 at 500px);
-```
 
-```scss
 @include add-gutter(1/3);
 @include add-gutter(.25 at 532px);
-```
+</code></pre>
