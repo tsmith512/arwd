@@ -1,5 +1,15 @@
 ## What is toolkit?
 
-[Toolkit](https://github.com/team-sass/toolkit) has been providing for us our box model fix and our fluid images, but it can do so much more
+<p class="large">
+  We've been using Toolkit for <code>border-box</code>, but it can do much more.
+</p>
 
-Designed not as a CSS Framework, but rather a set of tools to build your own, Toolkit makes doing things the right way the easy way
+<ul class="two-col">
+  <li>Kickstart <em class="green">&larr; we've been using this</em></li>
+  <li>Intrinsic ratios</li>
+  <li>A better <code>clearfix</code></li>
+  <li>Color functions</li>
+  <li>Triangles</li>
+  <li>Vertical Centering</li>
+  <li><em>Lots more. See the <a href="https://github.com/at-import/toolkit#table-of-contents" target="_blank">Toolkit Readme</a>. </em></li>
+</ul>

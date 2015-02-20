@@ -532,7 +532,7 @@ $selectionColor: #fff;
       color: #FCF7D1 !important;
     }
 
-    p {
+    .large {
       background-color: #111111;
       padding-left: 2em;
       padding-right: 2em;
@@ -546,7 +546,24 @@ $selectionColor: #fff;
       em {
         color: #259959;
       }
+
+      ul {
+        @extend %challenge-lists;
+
+        li {
+          color: #FCF7D1;
+        }
+
+        li:before {
+          color: #259959;
+        }
+      }
     }
+
+    div.large {
+      padding-bottom: 1.5em;
+    }
+
   }
 }
 

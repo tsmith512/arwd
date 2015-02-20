@@ -1,16 +1,27 @@
 ## Basic Fluid Media
 
-Provided by Toolkit by default, the basic way to get images to squish and maintain their dimensions is fairly easy CSS.
+Fluid images is easy with CSS; Toolkit's <code>kickstart</code> adds this, too.
 
-```scss
+<div class="columns">
+  <div>
+<pre><code class="language-scss">// SCSS:
 @import "toolkit/kickstart";
-```
+</code></pre>
+  </div>
+  <div>
+<pre><code class="language-css">/\* Compiled CSS: \*/
+\*, \*:before, \*:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-```css
 img, video {
   max-width: 100%;
   height: auto;
 }
-```
+</code></pre>
+  </div>
+</div>
 
-<p class="fragment"><em>But Embedded Content Isn't So Easy</em></p>
+
+<p class="small">Embedded content isn't so easy&hellip;</p>

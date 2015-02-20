@@ -1,6 +1,10 @@
 ## Bronze challenge:
 
-Create an Intrinsic Ratio for the Video
+<div class="large">
+  <p>Use Toolkit to create an Intrinsic Ratio for the video:</p>
 
-* Remove the video's ```display: none```.
-* Apply a 16:9 intrinsic ratio to the video
+  <ul>
+    <li>Remove my <code class="language-css">iframe { max-width 100%: }</code> rule.</li>
+    <li>Apply a 16:9 intrinsic ratio instead.</li>
+  </ul>
+</div>

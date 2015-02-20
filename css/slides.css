@@ -792,18 +792,27 @@ pre.line-numbers > code {
 .win body section.present h1, .win body section.present p {
   color: #FCF7D1 !important;
 }
-.win body section.present p {
+.win body section.present .large {
   background-color: #111111;
   padding-left: 2em;
   padding-right: 2em;
   border-top: 8px solid #259959;
   border-bottom: 8px solid #259959;
 }
-.win body section.present p:before, .win body section.present p:after {
+.win body section.present .large:before, .win body section.present .large:after {
   display: none;
 }
-.win body section.present p em {
+.win body section.present .large em {
   color: #259959;
+}
+.win body section.present .large ul li {
+  color: #FCF7D1;
+}
+.win body section.present .large ul li:before {
+  color: #259959;
+}
+.win body section.present div.large {
+  padding-bottom: 1.5em;
 }
 
 .idea body {
@@ -958,26 +967,26 @@ html.agenda ul li .break {
   margin-bottom: 0;
 }
 
-.bronze body ol, .silver body ol, .gold body ol, .bronze body ul, .silver body ul, .gold body ul {
+.win body section.present .large ul, .bronze body ol, .silver body ol, .gold body ol, .bronze body ul, .silver body ul, .gold body ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.bronze body ol li, .silver body ol li, .gold body ol li, .bronze body ul li, .silver body ul li, .gold body ul li {
+.win body section.present .large ul li, .bronze body ol li, .silver body ol li, .gold body ol li, .bronze body ul li, .silver body ul li, .gold body ul li {
   position: relative;
   padding-bottom: 0.5em;
   border-bottom: 1px solid black;
 }
-.bronze body ol li:last-child, .silver body ol li:last-child, .gold body ol li:last-child, .bronze body ul li:last-child, .silver body ul li:last-child, .gold body ul li:last-child {
+.win body section.present .large ul li:last-child, .bronze body ol li:last-child, .silver body ol li:last-child, .gold body ol li:last-child, .bronze body ul li:last-child, .silver body ul li:last-child, .gold body ul li:last-child {
   border-bottom: 0;
 }
-.bronze body ol li:before, .silver body ol li:before, .gold body ol li:before, .bronze body ul li:before, .silver body ul li:before, .gold body ul li:before {
+.win body section.present .large ul li:before, .bronze body ol li:before, .silver body ol li:before, .gold body ol li:before, .bronze body ul li:before, .silver body ul li:before, .gold body ul li:before {
   position: absolute;
   left: -1em;
   content: "\002022";
   text-shadow: 1px 1px 1px black;
 }
-.bronze body ol:last-child li:last-child, .silver body ol:last-child li:last-child, .gold body ol:last-child li:last-child, .bronze body ul:last-child li:last-child, .silver body ul:last-child li:last-child, .gold body ul:last-child li:last-child {
+.win body section.present .large ul:last-child li:last-child, .bronze body ol:last-child li:last-child, .silver body ol:last-child li:last-child, .gold body ol:last-child li:last-child, .bronze body ul:last-child li:last-child, .silver body ul:last-child li:last-child, .gold body ul:last-child li:last-child {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
