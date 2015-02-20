@@ -5,8 +5,6 @@
 .media {
   @extend %region;
 
-  // We'll hide this to begin our work.
-
   iframe {
     max-width: 100%;
   }
