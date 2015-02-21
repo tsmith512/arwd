@@ -1,0 +1,14 @@
+diff --git a/recipe/sass/partials/_media.scss b/recipe/sass/partials/_media.scss
+index 2e4ad89..eeaceb4 100644
+--- a/recipe/sass/partials/_media.scss
++++ b/recipe/sass/partials/_media.scss
+@@ -5,7 +5,7 @@
+ .media {
+   @extend %region;
+ 
+-  iframe {
+-    max-width: 100%;
++  .fluid-video {
++    @include intrinsic-ratio;
+   }
+ }
