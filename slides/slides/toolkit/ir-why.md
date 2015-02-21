@@ -1,7 +1,7 @@
 # Win!
 
 <div class="large">
-  <p>Intrinsic ratios are useful anytime you need a fluid content with an aspect ratio, including:</p>
+  <p>Intrinsic ratios are useful anytime you need fluid content with an aspect ratio, including:</p>
 
   <ul>
     <li>When your CMS lets authors add oEmbed media.</li>
