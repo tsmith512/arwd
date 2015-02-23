@@ -20,11 +20,11 @@ a CSS technique to constrain child elements to a particular aspect ratio based o
   </div>
   <div>
 
-<pre><code class="language-css">/* Compiled CSS: */
+<pre><code class="language-css">/\* Compiled CSS: \*/
 .ratio-16-9 {
   position: relative;
   height: 0;
-  padding-top: 56.25%; /* &larr; MAGIC */
+  padding-top: 56.25%; /\* &larr; MAGIC \*/
   width: 100%;
 }
 .ratio-16-9 > * {

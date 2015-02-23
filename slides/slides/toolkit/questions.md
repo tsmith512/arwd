@@ -5,6 +5,8 @@
     <ul>
       <li>Kickstart</li>
       <li>Intrinsic Ratio</li>
+      <li>Clearfixes, compared</li>
+      <li>Other Toolkit grab-bag fun</li>
     </ul>
   </div>
   <div>

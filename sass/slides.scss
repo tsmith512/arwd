@@ -2,6 +2,7 @@
 @import '../js/vendor/reveal/css/theme/template/settings.scss';
 @import "compass";
 @import 'variables';
+@import 'toolkit';
 
 // Base settings for all themes that can optionally be
 // overridden by the super-theme
@@ -332,6 +333,25 @@ $selectionColor: #fff;
 
   .green {
     color: #259959;
+  }
+
+  .fancy-underlines {
+    @include underline($background: $grey-lt, $color: $blue, $clear-descenders: true, $distance: 0.985, $width: 1);
+    font-size: 2em;
+    font-weight: bold;
+
+    &, &:hover {
+      color: $blue !important;
+    }
+
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+
+  .triangle {
+    @include triangle($color: $blue, $height: 4em, $width: 6em, $angle: 180);
+    margin: 0 auto;
   }
 
   table {
