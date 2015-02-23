@@ -1,9 +1,11 @@
 ## Gold challenge:
 
-Inline Media
+<div class="large">
+  <img src="img/yoda-my-ally.gif" alt="" width="500" height="213" style="display: block; width: 100%;" />
+</div>
 
-* Based on your content for the ```min-width``` and the point you go from one column to two columns, create a fenced query for inline media
-* At your inline media query, position the video and the carousel next to each other using a two column grid
-* The carousel should span the first column
-* The video should span the last column
-* The video should be the same ratio as the carousel
+<p class="small">
+  There is no <strong>Gold Challenge</strong> for this section. Review
+  <a href="https://github.com/at-import/toolkit" target="_blank">Toolkit's documentation</a> <br />
+  to see how it can help you with the heavy-lifting.
+</p>

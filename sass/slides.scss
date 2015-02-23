@@ -851,6 +851,10 @@ html.agenda { // Add specificity to fight Reveal
 
   .small {
     color: darken(#C89F5F, 35%);
+    a, a:hover {
+      color: darken(#C89F5F, 25%);
+      text-decoration: underline;
+    }
   }
 }
 
@@ -880,6 +884,10 @@ html.agenda { // Add specificity to fight Reveal
 
   .small {
     color:  darken(#D7D7D7, 40%);
+    a, a:hover {
+      color:  darken(#D7D7D7, 30%);
+      text-decoration: underline;
+    }
   }
 }
 
@@ -909,5 +917,9 @@ html.agenda { // Add specificity to fight Reveal
 
   .small {
     color:  darken(#F0D67C, 45%);
+    a, a:hover {
+      color:  darken(#F0D67C, 35%);
+      text-decoration: underline;
+    }
   }
 }

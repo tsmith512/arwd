@@ -1057,6 +1057,10 @@ html.agenda ul li .break {
 .bronze body .small {
   color: #57401e;
 }
+.bronze body .small a, .bronze body .small a:hover {
+  color: #7d5d2b;
+  text-decoration: underline;
+}
 
 .silver body {
   background-color: #D7D7D7;
@@ -1083,6 +1087,10 @@ html.agenda ul li .break {
 .silver body .small {
   color: #717171;
 }
+.silver body .small a, .silver body .small a:hover {
+  color: #8b8b8b;
+  text-decoration: underline;
+}
 
 .gold body {
   background-color: #e9d283;
@@ -1108,4 +1116,8 @@ html.agenda ul li .break {
 }
 .gold body .small {
   color: #79610e;
+}
+.gold body .small a, .gold body .small a:hover {
+  color: #a68513;
+  text-decoration: underline;
 }
