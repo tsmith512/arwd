@@ -4,12 +4,6 @@ Make sure you have [node.js](http://nodejs.org/download/) installed on your syst
 
 Install Yeoman and our generator with:
 
-```bash
-$ npm install -g yo generator-drupal-theme
-```
-
-Alternatively:
-
-```bash
-$ npm install -g yo generator-aurora
-```
+<pre><code class="language-bash">
+npm install -g yo generator-drupal-theme
+</code></pre>

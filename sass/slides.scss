@@ -584,6 +584,15 @@ $selectionColor: #fff;
       padding-bottom: 1.5em;
     }
 
+    .small {
+      font-family: 'Archer SSm A', 'Archer SSm B';
+      border: 0;
+      padding: 0;
+      a, a:hover {
+        color: lighten(#259959, 15%);
+        text-decoration: underline;
+      }
+    }
   }
 }
 

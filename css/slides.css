@@ -844,6 +844,15 @@ pre.line-numbers > code {
 .win body section.present div.large {
   padding-bottom: 1.5em;
 }
+.win body section.present .small {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  border: 0;
+  padding: 0;
+}
+.win body section.present .small a, .win body section.present .small a:hover {
+  color: #3bd07e;
+  text-decoration: underline;
+}
 
 .idea body {
   background-color: #4180AB;

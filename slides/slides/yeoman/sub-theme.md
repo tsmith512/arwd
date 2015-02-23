@@ -1,9 +1,9 @@
 ## Create a sub-theme
 
-Within ```sites/all/themes```:
+Within <code>sites/all/themes</code>:
 
-```bash
-$ yo drupal-theme
-```
+<pre><code class="language-bash">
+yo drupal-theme
+</code></pre>
 
 <img src="img/yeoman-sub.png">
