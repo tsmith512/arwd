@@ -11,8 +11,6 @@
     - .vimrc
 
 - name: Install all gems
-  command: bash -lc "cd {{ item }} && bundle install --path=.vendor"
+  command: bash -lc "cd {{ item }} && bundle install"
   with_items:
-    - /home/vagrant/public_html/cafe
-    - /home/vagrant/public_html/cafe-done
     - /home/vagrant/public_html/recipe
