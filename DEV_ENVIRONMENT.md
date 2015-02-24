@@ -74,6 +74,8 @@ If everything worked correctly, then you should be able to see a website at http
 
 _Windows doesn't support NFS (although VirtualBox would just ignore that directive), so remove that. The `mount_options` directive instructs Vagrant to mount the shared folder with world-writable permissions, which will allow the Vagrant user to write to these files. The default permissions without NFS are read-only, but we need Sass to be able to generate its output. This is the only host-environment stumbling I ran into with Windows._
 
+**Note:** The default shared folder behavior doesn't automatically update files in a way that Ruby can detect. You cannot run `bundle exec compass watch`, you must instead run `bundle exec compass compile` anytime you change the Sass files.
+
 * From the command prompt, change directories into the project folder
 * Run `vagrant up`
 * From there, the machine will provision. Mac users see more frequent output to the console from Terminal than is provided by the Command Prompt, but it should be running fine. (If you're really curious, watch network utilization in `taskmgr`/`resmon`.)
