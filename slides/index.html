@@ -157,6 +157,9 @@
     <script src="../js/vendor/reveal/js/reveal.min.js"></script>
     <script src="../js/vendor/prism.js"></script>
     <script>
+      if (typeof Reveal == "undefined") {
+        alert("If you cloned this repo from GitHub, you'll need to run `git submodule init` and `git submodule update` to pull in additional JS libraries to view the slides. (Reveal.js was not detected.)");
+      }
       // Configure Reveal
       // Full list of configuration options available here:
       // https://github.com/hakimel/reveal.js#configuration
