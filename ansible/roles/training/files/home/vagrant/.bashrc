@@ -125,3 +125,5 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+PATH=$PATH:/opt/ruby-2.0.0-p481/bin/
