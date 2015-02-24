@@ -2,10 +2,9 @@
 require 'toolkit'
 require 'breakpoint'
 require 'singularitygs'
-require 'singularity-extras'
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "/recipe/"
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"
@@ -18,4 +17,4 @@ javascripts_dir = "js"
 relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false

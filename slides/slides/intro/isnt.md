@@ -1,5 +1,7 @@
-## What This Class Isn't
+# This Class Is Not
 
-* Introduction to Responsive Web Design
-* Training on CSS Systems (like Twitter Bootstrap or Zurb Foundation)
-* Drupal Theming
+<ul class="list-big">
+  <li>Intro to Responsive Web Design</li>
+  <li>Training on CSS Systems <small>(like Twitter Bootstrap or Zurb Foundation)</small></li>
+  <li>Drupal Theming</li>
+</ul>

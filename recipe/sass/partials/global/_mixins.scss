@@ -4,18 +4,70 @@
 // All of your mixins should go in this file.
 ////////////////////////
 
-@mixin header-emboss($color) {
-  color: lighten(invert($color), 35%);
-  text-shadow: emboss($color);
+@mixin fancy-list($color: $teal, $type: 'ol') {
+  html.gte-ie9 & { // This effect won't work in IE8-
+    list-style: none;
+    padding: 0;
+
+    li {
+      position: relative;
+      margin-bottom: 0.5em;
+
+      &:before {
+        position: absolute;
+        left: 0;
+
+        color: $color;
+      }
+    }
+
+    // If this is an ordered list, set up the counter and fancy numbers
+    @if ($type == 'ol') {
+      counter-reset: fancy-list-counter;
+
+      li {
+        padding-left: 2em;
+
+        &:before {
+          content: counter(fancy-list-counter);
+          counter-increment: fancy-list-counter;
+          font-family: $font-titling;
+          font-size: 1.125em;
+        }
+      }
+    // If not, assume it's an unordered list and set up the bullets
+    } @else {
+      li {
+        padding-left: 1em;
+
+        &:before {
+          content: "\002022";
+        }
+      }
+    }
+  }
 }
 
-@mixin body-coloring($color) {
-  background: light($color);
-  color: dark($color);
-}
+@mixin fancy-border($color: $green) {
+  position: relative;
+  border-bottom: 6px solid $color;
+  &:before {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: darken($color, 10%);
+  }
+  &:after {
+    content:"";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: darken($color, 10%);
+  }
 
-@mixin media-border($color, $width: $border-width) {
-  border-width: $width 0 $width 0;
-  border-color: $color;
-  border-radius: $width;
 }

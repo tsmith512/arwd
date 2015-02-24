@@ -1,10 +1,13 @@
 ## Gold challenge:
 
-Create a Large Layout
+<div class="large">
+  <p>Use Singularity and Breakpoint to create a Large layout:</p>
 
-* Based on your content, choose a ```min-width``` to switch from two columns to three columns
-* Add a 3 column golden ratio based grid at that point
-* Adjust the gutter
-* Make Media span the first column
-* Make Ingredients span the second column
-* Make Directions span the third column
+  <ul>
+    <li>Pick a <em><code>min-width</code></em> to switch to 3 columns; add a Breakpoint.</li>
+    <li>At this point, add a 3 column asymmertic grid whose middle column is twice the width of the other two <em>and</em> narrow the gutters.</li>
+    <li>Make <em>Ingredients</em> span the first column</li>
+    <li>Make <em>Directions</em> span the second column</li>
+    <li>Make <em>Media</em> span the last column</li>
+  </ul>
+</div>

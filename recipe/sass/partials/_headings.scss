@@ -1,0 +1,30 @@
+/**
+ * @file _headings.scss
+ * Partial describing all the heading tags
+ */
+
+// Compass provides this nifty way to write H1-H6 selectors.
+// Add two integer arguments to specify which h-tags to select.
+#{headers()} {
+  font-family: $font-titling;
+  line-height: 1.15;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $teal;
+}
+
+// Sass provides support for standard for and foreach loops,
+// which allow some tricky things to be written. This is fun,
+// though not particularly practical.
+@for $i from 1 through 6 {
+  #{"h" + $i} {
+    font-size: (7em - $i)*.5;
+  }
+}
+
+h1, h2 {
+  font-family: $font-script;
+  @include text-shadow(1px 1px 0 darken($green, 5%));
+}

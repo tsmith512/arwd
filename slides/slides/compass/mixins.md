@@ -1,23 +1,33 @@
-## Compass provides mixins and functions
+## Mixins
 
-<br>
+<div class="columns">
+  <div>
+<pre><code class="language-scss">// SCSS:
+@import "compass";
 
-```scss
-ul {
-  @include pretty-bullets('bullet.png');
-}
-```
-
-```scss
-ul {
-  margin-left: 0;
+.modal {
+  @include box-shadow(1px 1px 2px rgba(0,0,0,0.5));
 }
 
-ul li {
-  padding-left: 14px;
-  background: url('../img/bullet.png') no-repeat -12px -12px;
-  list-style-type: none;
+.overlay {
+  @include opacity(0.5);
 }
-```
 
-<p class="fragment">In this case, the mixin allows the use of a "pretty" image for your bullets.</p>
+</code></pre>
+  </div>
+  <div>
+<pre><code class="language-scss">/\* Compiled CSS \*/
+.modal {
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}</code></pre>
+  </div>
+</div>
+
+<p class="small">CSS3 mixins add vendor prefixing. There are <a href="http://compass-style.org/index/mixins/" target="_blank">many many more</a>.</p>

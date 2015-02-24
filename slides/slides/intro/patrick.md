@@ -1,6 +1,7 @@
 # Patrick Coffey
-Engineer, Four Kitchens
+## Engineer @ <a href="http://www.fourkitchens.com">Four Kitchens</a>
 
-* [drupal.org/u/patrickcoffeyo](http://drupal.org/user/2837945)
-* [twitter.com/patrickocoffeyo](http://twitter.com/patrickocoffeyo)
-* [github.com/patrickocoffeyo](http://github.com/patrickocoffeyo)
+**patrickcoffeyo** on
+[Drupal.org](http://drupal.org/user/2837945), <br/>
+[GitHub](http://github.com/patrickocoffeyo), and
+[Twitter](http://twitter.com/patrickocoffeyo).

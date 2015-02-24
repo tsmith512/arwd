@@ -1,8 +1,25 @@
-## Drupal vs Compass
+## What does that mean?
 
-<table class="comparison">
-  <tr class="fragment" style="background-color: rgba(251, 41, 45, 0.2); "><td>HTML</td><td>CSS</td></tr>
-  <tr class="fragment" style="background-color: rgba(251, 41, 45, 0.4); "><td>PHP</td><td>Sass</td></tr>
-  <tr class="fragment" style="background-color: rgba(251, 41, 45, 0.6); "><td>Drupal</td><td>Compass</td></tr>
-  <tr class="fragment" style="background-color: rgba(251, 41, 45, .8); "><td>Modules</td><td>Extensions</td></tr>
-</table>
+<p class="large">An analogy:</p>
+
+<div class="mid-columns">
+  <div style="width: 75%;">
+    <table>
+      <tr style="background-color: rgba(0, 100, 200, 0.125); ">
+        <td>HTML</td>    <td>CSS</td>        <td>Final output</td>
+      </tr>
+      <tr style="background-color: rgba(0, 100, 200, 0.25); ">
+        <td>PHP</td>     <td>Sass</td>       <td>Scripting language</td>
+      </tr>
+      <tr style="background-color: rgba(0, 100, 200, 0.375); ">
+        <td>Drupal</td>  <td>Compass</td>    <td>Framework</td>
+      </tr>
+      <tr style="background-color: rgba(0, 100, 200, .5); ">
+        <td>Modules</td> <td>Extensions</td> <td>Plug-ins</td>
+      </tr>
+    </table>
+  </div>
+  <div style="width: 25%">
+    <img src="img/onions-have-layers.jpg" alt="Ogres have Layers" width="500" height="500"/>
+  </div>
+</div>

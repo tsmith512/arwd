@@ -4,6 +4,10 @@
 // This file gets turned into style.css. This file should really hold nothing except for imports of your base, style guide, layout, and design partials.
 ////////////////////////
 
+// To illustrate, we'll output both the media queries _and_ the no-query fallbacks into this file
+$breakpoint-no-queries: false;
+$breakpoint-no-query-fallbacks: true;
+
 //////////////////////////////
 // Base Import
 //////////////////////////////
@@ -13,7 +17,9 @@
 // Import Partials
 //////////////////////////////
 @import "partials/body";
-@import "partials/headers";
-@import "partials/regions";
+@import "partials/headings";
+@import "partials/links";
+@import "partials/header";
 @import "partials/ingredients";
+@import "partials/directions";
 @import "partials/media";

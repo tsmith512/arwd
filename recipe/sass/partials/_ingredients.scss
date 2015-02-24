@@ -1,14 +1,11 @@
-.recipe footer {
-  font-style: italic;
-
-  span {
-    margin-right: .5em;
-  }
-}
+/**
+ * @file _ingredients.scss
+ */
 
 .ingredients {
+  @extend %region;
+
   ul {
-    list-style: none;
-    padding-left: 1em;
+    @include fancy-list($type: 'ul');
   }
 }

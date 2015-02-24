@@ -1,0 +1,17 @@
+diff --git a/recipe/sass/partials/_headings.scss b/recipe/sass/partials/_headings.scss
+index 37e730a..4fbca06 100644
+--- a/recipe/sass/partials/_headings.scss
++++ b/recipe/sass/partials/_headings.scss
+@@ -28,3 +28,12 @@ h1, h2 {
+   font-family: $font-script;
+   @include text-shadow(1px 1px 0 darken($green, 5%));
+ }
++
++h3 {
++  &:before {
++    @include triangle($color: $teal, $width: 0.5em, $height: 0.5em, $angle: 90);
++    display: inline-block;
++    margin-right: 0.5em;
++    content: " ";
++  }
++}

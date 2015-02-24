@@ -1,14 +1,26 @@
 ## Fenced Values
 
-Two values creates a min-width / max-width query.
+Two values creates a <code>min-width</code> / <code>max-width</code> query.
 
-```scss
-$big-header: 330px 750px;
+<div class="columns">
+  <div><pre><code class="language-scss">// SCSS:
+$medium-header: 460px 780px;
 
 #header {
   font-size: 2em;
-  @include breakpoint($big-header) {
+  @include breakpoint($medium-header) {
     font-size: 2.5em;
   }
 }
-```
+</code></pre></div>
+  <div><pre><code class="language-css">/\* Compiled CSS \*/
+#header {
+  font-size: 2em;
+}
+@media (min-width: 460px) and (max-width: 780px) {
+  #header {
+    font-size: 2.5em;
+  }
+}
+</code></pre></div>
+</div>

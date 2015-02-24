@@ -1,15 +1,29 @@
-## Single value = min-width
+## Single Value &rarr; <code>min-width</code>
 
-Pass Breakpoint just a number and you get a min-width query.
+Pass Breakpoint one number to get a min-width query.
 
-```scss
-// THIS IS OUR FIRST BREAKPOINT VARIABLE
-$basic: 500px; // <-- YUP, THIS ONE
+<div class="columns">
+  <div><pre><code class="language-scss">// SCSS:
+$big-btn: 720px;
 
-#main-nav {
-  width: 100%
-  @include breakpoint($basic) {
-    width: 75%;
+header a {
+  padding: 0.5em;
+  font-size: 0.875em;
+  @include breakpoint($big-btn) {
+    padding: 2em;
+    font-size: 1em;
+  }
+}</code></pre></div>
+  <div><pre><code class="language-css">/\* Compiled CSS \*/
+header a {
+  padding: 0.5em;
+  font-size: 0.875em;
+}
+@media (min-width: 720px) {
+  header a {
+    padding: 2em;
+    font-size: 1em;
   }
 }
-```
+</code></pre></div>
+</div>

@@ -1,0 +1,934 @@
+@import '../js/vendor/reveal/css/theme/template/mixins.scss';
+@import '../js/vendor/reveal/css/theme/template/settings.scss';
+@import "compass";
+@import 'variables';
+@import 'toolkit';
+
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+// Background of the presentation
+$backgroundColor: $grey-lt;
+
+// Primary/body text
+$mainFont: $whitney;
+$mainFontSize: 32px;
+$mainColor: $grey-dk;
+
+// Headings
+$headingMargin: 0 0 16px 0;
+$headingFont: $tungsten;
+$headingColor: $blue;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: uppercase;
+$headingTextShadow: 1px 1px 0px rgba(255,255,255,0.75);
+$heading1TextShadow: 1px 1px 0px rgba(0,0,0,0.75);
+
+// Links and actions
+$linkColor: $blue;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: $orange;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+  background: $backgroundColor;
+}
+
+@import '../js/vendor/reveal/css/theme/template/theme.scss';
+@import 'prismjs';
+
+// Extendables:
+%flex-two-col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+
+
+  > * {
+    width: 50%;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+}
+
+%flex-two-col-mid {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+// My overrides:
+.reveal {
+
+  :not(pre) > code[class*="language-"] {
+    display: inline;
+    @include border-radius(0);
+    border: none;
+    padding: 0;
+    vertical-align: inherit;
+    line-height: inherit;
+  }
+
+  h1 {
+    font-weight: 600;
+
+    a {
+      color: lighten($blue, 10%) !important;
+      &:hover { text-decoration: underline !important; }
+    }
+  }
+
+  h2 {
+    color: mix($grey-md, $grey-dk);
+  }
+
+  #{headings(2,6)} {
+    // This comes in from reveal.js's base styles
+    text-transform: none;
+  }
+
+  #{headings()} {
+    small {
+      display: block;
+      font-size: 0.875em;
+    }
+  }
+
+  p {
+    margin: 1em 0;
+
+    + .columns, +.mid-columns {
+      margin-top: -1em;
+    }
+  }
+
+
+  .large {
+    border-bottom: 2px solid #bbb;
+    border-top: 2px solid #fff;
+    padding: 0.5em 0;
+    font-size: 36px;
+    font-weight: 700;
+
+    position: relative;
+
+    &:before, &:after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      content: " ";
+      font-size: 0;
+    }
+    &:before {
+      top: -2px;
+      border-top: 2px solid #bbb;
+    }
+    &:after {
+      bottom: -2px;
+      border-bottom: 2px solid #fff;
+    }
+
+    small {
+      font-size: 24px;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+
+  p.small {
+    border-style: dotted;
+    border-color: #bbb;
+    border-width: 1px 0;
+    padding: 1em 0;
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  p.citation {
+    margin-top: 0;
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  p.filename {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 0;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  }
+
+  a.reference {
+    display: block;
+    line-height: 1;
+    font-size: 1.5em;
+    margin: 1em auto 0;
+    padding: 0.25em 0.75em;
+    @include text-shadow(2px 2px 3px rgba(0,0,0,0.375));
+
+    &:hover {
+      @include text-shadow(3px 3px 3px rgba(0,0,0,0.5));
+    }
+  }
+
+  a[target="_blank"]:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    width: 1em;
+    margin-left: 0.5em;
+    height: 1em;
+    background: {
+      image: url('../slides/img/new-window.svg');
+      size: contain;
+      repeat: no-repeat;
+      position: center center;
+    }
+    @include opacity(0.5);
+  }
+
+  ul li {
+    margin-bottom: 0.5em !important;
+  }
+
+  ul.two-col {
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
+
+    @extend %flex-two-col;
+
+    > li {
+      box-sizing: border-box;
+      text-align: center;
+      padding: 1em;
+      margin-bottom: 0;
+    }
+  }
+
+  ul.listreset {
+    margin: 0;
+    li {
+      margin: 0;
+      list-style: none;
+    }
+  }
+
+  ul.divided {
+    display: block;
+    width: auto;
+    border-top: 2px solid #bbb;
+    border-bottom: 2px solid #fff;
+    li {
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+      margin-bottom: 0 !important;
+      border-bottom: 2px solid #bbb;
+      border-top: 2px solid #fff;
+    }
+  }
+
+  ul.small {
+    font-size: 24px;
+
+    &.divided {
+      li {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+      }
+    }
+  }
+
+  .centered {
+    text-align: center;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .columns, .mid-columns {
+    @extend %flex-two-col;
+    > * {
+      @include box-sizing(border-box);
+      padding: 1em;
+    }
+
+    > div > pre {
+      margin-left: -1em;
+      margin-right: -1em;
+      width: auto;
+    }
+  }
+
+  .mid-columns {
+    @extend %flex-two-col;
+    @extend %flex-two-col-mid;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+
+  pre {
+    font-size: 0.75em;
+
+    &.small {
+      font-size: 0.675em;
+    }
+
+    code {
+      max-height: none;
+    }
+
+    &.scroll-y {
+      code {
+        overflow-y: scroll;
+        max-height: 350px;
+      }
+    }
+  }
+
+  .fourkitchens {
+    color: #35AA4E;
+  }
+
+  .red {
+    color: #B52C00;
+  }
+
+  .green {
+    color: #259959;
+  }
+
+  .fancy-underlines {
+    @include underline($background: $grey-lt, $color: $blue, $clear-descenders: true, $distance: 0.985, $width: 1);
+    font-size: 2em;
+    font-weight: bold;
+
+    &, &:hover {
+      color: $blue !important;
+    }
+
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+
+  .triangle {
+    @include triangle($color: $blue, $height: 4em, $width: 6em, $angle: 180);
+    margin: 0 auto;
+  }
+
+  table {
+    font-size: 0.875em;
+    width: 100%;
+
+    td {
+      padding: 0.25em;
+    }
+  }
+
+  img {
+    height: auto;
+  }
+
+  ul.list-big, ol.list-big {
+    border-top: 3px solid #d6d6d6;
+    border-bottom: 3px solid #fff;
+    counter-reset: list-counter;
+    li {
+      font-size: 1.125em;
+      padding: 0.75em 1em;
+      margin: 0 !important; // Reveal adds margin with !important
+      list-style: none;
+      text-align: center;
+      border-top: 3px solid #fff;
+      border-bottom: 3px solid #d6d6d6;
+
+      small {
+        display: block;
+        font-size: 0.75em;
+        font-style: italic;
+      }
+    }
+  }
+
+  ol.list-big li {
+    position: relative;
+    padding-left: 2em;
+
+    &:before {
+      content: counter(list-counter);
+      counter-increment: list-counter;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 0.375em 0.125em 0.375em;
+
+      font-size: 0.75em;
+      font-family: 'Archer SSm A', 'Archer SSm B';
+      font-weight: 800;
+      font-style: italic;
+
+      background-color: #fff;
+      color: #999;
+
+      border-left: 1px solid #d6d6d6;
+      border-bottom: 1px solid #d6d6d6;
+    }
+  }
+
+  blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+    @include box-shadow(none);
+    background: transparent;
+    margin: 0 auto;
+    padding: 0;
+
+    &:before, &:after, footer {
+      font-family: 'Archer SSm A', 'Archer SSm B';
+      font-style: italic;
+      font-weight: 400;
+      @include text-shadow(1px 1px 3px rgba(0,0,0,0.3));
+    }
+
+    &:before, &:after {
+      position: absolute;
+      // These font-sizes are specified in pixels because of a strange IE11 edgecase that caused ems to be exploded to tyranosaurusquotes!
+      font-size: 172px;
+      line-height: 0;
+    }
+
+    &:before {
+      top: 0.25em;
+      left: -0.5em;
+      content: open-quote;
+    }
+
+    &:after {
+      bottom: 0em;
+      right: -0.375em;
+      content: close-quote;
+    }
+
+    p {
+      border: 0 !important;
+      padding: 0 !important;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+// Special slides:
+
+.intro-tsmith body {
+  background: {
+    image: url('../slides/img/intro-tsmith.jpg');
+    size: contain;
+    position: left center;
+    color: white;
+    repeat: no-repeat;
+  }
+
+  section.present {
+    right: 0;
+    text-align: right;
+  }
+}
+
+.intro-patrick body {
+  background: {
+    image: url('../slides/img/intro-patrick.jpg');
+    size: contain;
+    position: right center;
+    color: white;
+    repeat: no-repeat;
+  }
+
+  section.present {
+    right: 0;
+    text-align: left;
+  }
+}
+
+.intro-matt body {
+  background: {
+    image: url('../slides/img/intro-matt.jpg');
+    size: contain;
+    position: center bottom;
+    color: white;
+    repeat: no-repeat;
+  }
+
+  section.present {
+    padding-bottom: 20em;
+    text-align: center;
+  }
+}
+
+
+#goals {
+  .two-col li {
+    padding-top: 0;
+  }
+}
+
+#flossie, #her-resume {
+  .columns {
+    @extend %flex-two-col-mid;
+  }
+}
+
+.ojo body {
+  background-color: #8C0005;
+
+  section.present {
+    h1, p {
+      color: #FCF7D1 !important;
+    }
+
+    p {
+      background-color: #111111;
+      padding-left: 2em;
+      padding-right: 2em;
+      border-top: 8px solid #B52C00;
+      border-bottom: 8px solid #B52C00;
+
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.win body {
+  background-color: #20663F;
+
+  section.present {
+    h1, p {
+      color: #FCF7D1 !important;
+    }
+
+    .large {
+      background-color: #111111;
+      padding-left: 2em;
+      padding-right: 2em;
+      border-top: 8px solid #259959;
+      border-bottom: 8px solid #259959;
+
+      &:before, &:after {
+        display: none;
+      }
+
+      em {
+        color: #259959;
+      }
+
+      ul {
+        @extend %challenge-lists;
+
+        li {
+          color: #FCF7D1;
+        }
+
+        li:before {
+          color: #259959;
+        }
+      }
+    }
+
+    div.large {
+      padding-bottom: 1.5em;
+    }
+
+    .small {
+      font-family: 'Archer SSm A', 'Archer SSm B';
+      border: 0;
+      padding: 0;
+      a, a:hover {
+        color: lighten(#259959, 15%);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.idea body {
+  background-color: #4180AB;
+
+  section.present {
+
+    h1 {
+      color: #FFFFFF;
+    }
+
+    a, a:hover {
+      color: white;
+    }
+
+    .large, p {
+      color: #E4EBF0;
+      padding: 2em;
+      border-top: 8px solid #8AB3CF;
+      border-bottom: 8px solid #8AB3CF;
+
+      &:before, &:after {
+        display: none;
+      }
+
+      img {
+        background: rgba(255,255,255,0.8);
+        border-color: darken(#4180AB, 15%);
+      }
+    }
+  }
+}
+
+.credits body {
+  background-color: #333;
+
+  section.present {
+
+    h1, p {
+      color: #CCC;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    p {
+      padding: 2em;
+      border-top: 8px solid #666;
+      border-bottom: 8px solid #666;
+
+      &:before, &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.theatre body {
+  background-color: #222;
+
+  section.present {
+    h1, h2, p {
+      color: #ddd;
+    }
+
+    p.large {
+      padding: 2em;
+      border-top: 8px solid #333;
+      border-bottom: 8px solid #333;
+
+      &:before, &:after {
+        display: none;
+      }
+
+      img {
+        @include box-shadow(none);
+        border: 0;
+        background: 0;
+      }
+    }
+
+    a {
+      color: white;
+    }
+
+    img {
+      @include box-shadow(0 0 50px rgba(0,0,0,1));
+    }
+  }
+}
+
+.pause body {
+  background-color: darken(#37324A, 5%);
+
+  section.present {
+
+    h1, h2 {
+      color: #F2D680;
+      @include text-shadow(1px 1px 0px rgba(0, 0, 0, 0.5))
+    }
+
+    ul, p {
+      color: #DDD;
+    }
+
+    a {
+      color: #F3A358;
+      &:hover {
+        color: #F2D680;
+      }
+    }
+
+    p.small {
+      color: lighten(#933C60, 10%);
+      border-color: darken(#37324A, 15%);
+    }
+  }
+}
+
+html.agenda { // Add specificity to fight Reveal
+  ul {
+    border-top: 4px solid #d6d6d6;
+    border-bottom: 4px solid #d6d6d6;
+    padding: 0.5em 0;
+    margin: 0 auto !important;
+    width: 20em;
+
+    li {
+      @include clearfix;
+      padding: 0;
+      margin: 0 !important; // Reveal adds margin with !important
+      list-style: none;
+      font-size: 0.825em;
+
+      .time {
+        width: 15%;
+        float: left;
+        font-weight: 600;
+        text-align: right;
+      }
+
+      .item {
+        width: 80%;
+        float: right;
+      }
+
+      .break {
+        padding: 0.125em 0;
+        color: #006DAF; //lighten($grey-dk, 30%);
+        font-style: italic;
+      }
+    }
+  }
+}
+
+%challenge-headers {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+%challenge-large-content {
+  color: #eee;
+  background-color: rgba(0,0,0,0.8);
+  @include box-shadow(5px 0 40px rgba(0,0,0,0.35));
+  padding: 2em;
+  margin: 1em 0;
+  border-top: 8px solid;
+  border-bottom: 8px solid;
+
+  &:before, &:after {
+    display: none;
+  }
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+%challenge-lists {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  li:before {
+    position: absolute;
+    left: -1em;
+    content: "\002022";
+    @include text-shadow(1px 1px 1px rgba(0,0,0,1));
+  }
+
+  &:last-child li:last-child {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+%challenges-footer {
+  border-top: 0;
+  border-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Archer SSm A', 'Archer SSm B';
+}
+
+%challenges {
+  h1, h2 {
+    @extend %challenge-headers;
+  }
+
+  .large {
+    @extend %challenge-large-content;
+  }
+
+  ol, ul {
+    @extend %challenge-lists;
+  }
+
+  p.small {
+    @extend %challenges-footer;
+  }
+}
+
+.bronze body {
+  @extend %challenges;
+  background-color: #C89F5F;
+  @include background-image(linear-gradient(to bottom right, lighten(#C89F5F, 7.5%), darken(#C89F5F, 10%)));
+
+  #{headings(1,2)} {
+    color: darken(#C89F5F, 30%);
+  }
+
+  .large {
+    border-top-color: darken(#C89F5F, 25%);
+    border-bottom-color: darken(#C89F5F, 25%);
+
+    em {
+      color: #C89F5F;
+    }
+  }
+
+  ol, ul {
+    li:before {
+      color: #C89F5F;
+    }
+  }
+
+  .small {
+    color: darken(#C89F5F, 35%);
+    a, a:hover {
+      color: darken(#C89F5F, 25%);
+      text-decoration: underline;
+    }
+  }
+}
+
+.silver body {
+  @extend %challenges;
+  background-color: #D7D7D7;
+  @include background-image(linear-gradient(to bottom right, lighten(#D7D7D7, 5%), darken(#D7D7D7, 15%)));
+
+  #{headings(1,2)} {
+    color: darken(#D7D7D7, 35%);
+  }
+
+  .large {
+    border-top-color: darken(#D7D7D7, 25%);
+    border-bottom-color: darken(#D7D7D7, 25%);
+
+    em {
+      color: #A1A1A1;
+    }
+  }
+
+  ol, ul {
+    li:before {
+      color: darken(#A1A1A1, 5%);
+    }
+  }
+
+  .small {
+    color:  darken(#D7D7D7, 40%);
+    a, a:hover {
+      color:  darken(#D7D7D7, 30%);
+      text-decoration: underline;
+    }
+  }
+}
+
+.gold body {
+  @extend %challenges;
+  background-color: desaturate(#F0D67C, 10%);
+  @include background-image(linear-gradient(to bottom right, #F0D67C, darken(desaturate(#F0D67C, 10%), 20%)));
+
+  #{headings(1,2)} {
+    color: darken(#F0D67C, 40%);
+  }
+
+  .large {
+    border-top-color: darken(#F0D67C, 25%);
+    border-bottom-color: darken(#F0D67C, 25%);
+
+    em {
+      color: #F0D67C;
+    }
+  }
+
+  ol, ul {
+    li:before {
+      color: #F0D67C;
+    }
+  }
+
+  .small {
+    color:  darken(#F0D67C, 45%);
+    a, a:hover {
+      color:  darken(#F0D67C, 35%);
+      text-decoration: underline;
+    }
+  }
+}

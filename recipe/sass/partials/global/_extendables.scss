@@ -15,8 +15,23 @@
 
 
 //////////////////////////////
-// Region Padding
+// Basic Region Styles
 //////////////////////////////
-%region-padding {
-  padding: .25rem .5rem;
+%region {
+  padding: 1em;
+}
+
+//////////////////////////////
+// The Micro Clearfix
+//////////////////////////////
+%clearfix {
+  zoom: 1; // For IE 6/7 (trigger hasLayout)
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }

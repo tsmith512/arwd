@@ -2,121 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Advanced Responsive Web Design with Sass+Compass</title>
+  <title>Advanced Responsive Web Design with Sass and Compass</title>
 
   <meta name="description" content="Training assets for Advanced RWD with Sass+Compass">
-  <meta name="author" content="Chris Ruppel, Sam Richard, Ian Carrico, Mason Wendell">
+  <meta name="author" content="Taylor Smith, Patrick Coffey, Chris Ruppel, Sam Richard, Ian Carrico, Mason Wendell">
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <style>
-    @import url("http://fonts.googleapis.com/css?family=Rambla:400,700,400itali");
-    html {
-      background: #66b360;
-      padding: 1em 2em;
-    }
-    body {
-      text-align: center;
-      max-width: 42em;
-      margin: 1em auto;
-      padding: 2em 3em;
-      color: #444;
-      background: #f3f3f3;
-      box-shadow: inset 0 0 1.4em #020, 0 0 4em rgba(255,255,255,.8);
-      font-family: "Rambla", sans-serif;
-      -webkit-transition: all 1s ease;
-         -moz-transition: all 1s ease;
-          -ms-transition: all 1s ease;
-           -o-transition: all 1s ease;
-              transition: all 1s ease;
-    }
-    h1 {margin-top: 0; }
-    ul,li {text-align: left; }
-    a {color: #66b360; }
-    a:visited {color: #065300; }
-    abbr {cursor: help; }
-    p.small {
-      font-size: .8em;
-    }
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6795652/627226/css/fonts.css" />
+  <link rel="stylesheet" href="css/toc.css" />
 
-    /* -- resize me :) -- */
-    body::after {
-      content: 'resize me \00A0 \00A0 :)';
-      font-size: 3em;
-      color: #000;
-      opacity: .025;
-      text-shadow: 0 0 .4em #fff;
-
-      position: absolute;
-      bottom: 2em;
-      left: 50%;
-      margin-left: -3em;
-
-      -webkit-animation: pulse 4s linear 5;
-         -moz-animation: pulse 4s linear 5;
-          -ms-animation: pulse 4s linear 5;
-           -o-animation: pulse 4s linear 5;
-              animation: pulse 4s linear 5;
-    }
-
-    /* -- le keyframes -- */
-    @-webkit-keyframes pulse {50% {opacity: .2; }}
-       @-moz-keyframes pulse {50% {opacity: .2; }}
-        @-ms-keyframes pulse {50% {opacity: .2; }}
-         @-o-keyframes pulse {50% {opacity: .2; }}
-            @keyframes pulse {50% {opacity: .2; }}
-
-    @-webkit-keyframes throb {50% {border-radius: 5em 12em; }}
-       @-moz-keyframes throb {50% {border-radius: 5em 12em; }}
-        @-ms-keyframes throb {50% {border-radius: 5em 12em; }}
-         @-o-keyframes throb {50% {border-radius: 5em 12em; }}
-            @keyframes throb {50% {border-radius: 5em 12em; }}
-
-
-    /* -- le queries de media -- */
-    @media (min-width: 26em) {
-      body {
-        text-align: left;
-        margin-top: 2em;
-        padding: 2em 5em;
-        border-radius: 2em 4em;
-      }
-    }
-    @media (min-width: 44em) {
-      body {
-        margin-top: 3em;
-        padding: 2em 4em 2em 8em;
-        border-radius: 2em 9em;
-      }
-    }
-    @media (min-width: 61em) {
-      body {
-        margin-top: 3.5em;
-        padding: 2em 3em 2em 13em;
-        border-radius: 2em 17em;
-
-      -webkit-animation: throb 5.5s ease-in-out 5;
-         -moz-animation: throb 5.5s ease-in-out 5;
-          -ms-animation: throb 5.5s ease-in-out 5;
-           -o-animation: throb 5.5s ease-in-out 5;
-              animation: throb 5.5s ease-in-out 5;
-
-      }
-    }
-  </style>
 </head>
 <body>
+<header>
+  <h1>Advanced Responsive Web Design Training</h1>
+  <h2>with Sass, Compass, and Singularity</h2>
+</header>
+<div class="wrapper">
+  <div class="toc">
+    <div class="intro">
+      <p>
+        Thanks for attending our class today. Compiled here, you'll find
+        the slides, examples, and references.
+      </p>
+      <p>Brought to you by <a href="http://twitter.com/tsmith512">Taylor Smith</a>, <a href="http://twitter.com/patrickcoffeyo">Patrick Coffey</a>, <a href="http://twitter.com/Snugug">Sam Richard</a>, <a href="http://twitter.com/iamcarrico">Ian Carrico</a>, and <a href="http://twitter.com/rupl">Chris Ruppel</a></p>
 
-  <h1>Advanced <abbr title="Responsive Web Design">RWD</abbr> with Sass+Compass</h1>
-  <h2>Welcome to the <em>worst</em> training ever!</h2>
-  <h3>Website located at: <a href="http://fourkitchens.github.io/advanced-rwd/">fourkitchens.github.io/advanced-rwd/</a></h3>
-  <ul>
-    <li><a href="slides/">Slides for Today's Training</a></li>
-    <li><a href="https://github.com/fourkitchens/responsive-training-site">Code for Today's Training</a></li>
-    <li><a href="http://fourkitchens.github.io/responsive-training-site/">Example of Finished Site</a></li>
-  </ul>
-  <p>Brought to you by <a href="http://twitter.com/Snugug">Sam Richard</a>, <a href="http://twitter.com/iamcarrico">Ian Carrico</a>, and <a href="http://twitter.com/rupl">Chris Ruppel</a></p>
-
+    </div>
+    <div class="references">
+      <h4>References</h4>
+      <ul>
+        <li><h5>Projects</h5>
+          <ul>
+            <li><a href="http://sass-lang.com/">Sass</a></li>
+            <li><a href="http://compass-style.org/">Compass</a></li>
+            <li><a href="http://bundler.io/">Bundler</a></li>
+            <li><a href="http://singularity.gs/">Singularity</a></li>
+            <li><a href="https://github.com/at-import/Singularity-extras">Singularity Extras</a></li>
+            <li><a href="http://breakpoint-sass.com/">Breakpoint</a></li>
+            <li><a href="https://github.com/at-import/toolkit">Toolkit</a></li>
+          </ul>
+        </li>
+        <li><h5>Documentation</h5>
+          <ul>
+            <li>Paul Irish: <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">* { Box-sizing: Border-box } FTW</a></li>
+            <li>John Albin Wilkins: <a href="http://palantir.net/blog/responsive-design-s-dirty-little-secret">Responsive Design’s Dirty Little Secret</a> (or, "How exactly does Singularity's <em>Isolation</em> work, and why?")</li>
+            <li>Singularity: <a href="https://github.com/at-import/Singularity/wiki/Creating-Grids#symmetric-grids">Symmetric Grids</a></li>
+            <li>Singularity: <a href="https://github.com/at-import/Singularity/wiki/Creating-Grids#asymmetric-grids">Asymmetric Grids</a></li>
+            <li>Singularity: <a href="https://github.com/at-import/Singularity/wiki/Output-Styles">Output Styles: Float vs. Isolation</a></li>
+            <li>Snugug: <a href="http://snugug.com/musings/bulletproof-combo-fixed-and-fluid-grids-css3-calc">Bulletproof Combo Fixed and Fluid Grids with Css3 Calc</a></li>
+            <li>CSS-Tricks: <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Guide to Flexbox</a></li>
+          </ul>
+        </li>
+        <li><h5>Other Presentations</h5>
+          <ul>
+            <li>Snugug: <a href="http://snugug.github.io/responsive-grids/">Responsive Grids</a></li>
+            <li>TSmith: <a href="http://tsmith512.github.io/intro-to-singularity/">Introduction to Singularity</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="index">
+      <h4>Resources</h4>
+      <ul>
+        <li><strong><a href="slides/index.html">Presentation Slides</a></strong></li>
+        <li><strong><a href="recipe/index.html">Example Site: Guacamole Recipe</a></strong></li>
+        <li><strong><a href="https://github.com/tsmith512/arwd/">GitHub Repository</a></strong></li>
+        <li><strong><a href="http://ts512.me/arwd-feedback">Course Survey</a></strong></li>
+      </ul>
+      <h4>Example Snippets on SassMeister</h4>
+      <ul>
+        <li><a href="http://sassmeister.com/gist/4be62c93bca8925d2275">Part 1: Sass Basics</a></li>
+        <li><a href="http://sassmeister.com/gist/e089eca5a455ba902c19">Part 2: Compass Basics</a></li>
+        <li><a href="http://sassmeister.com/gist/7ecd2756d65790b139e0">Part 3: Media Queries with Breakpoint</a></li>
+        <li><a href="http://sassmeister.com/gist/21840fa2c486b6e698d7">Part 4: Intro to Singularity and Box-sizing, Rebuilding 960</a></li>
+        <li><a href="http://sassmeister.com/gist/64f013e2100d79fffb57">Part 5A: Asymmetric Grid Samples with Singularity Extras</a></li>
+        <li><a href="http://sassmeister.com/gist/b592e7567fd4bf2eba18">Part 5B: Using different grids at different <code>min-widths</code> with <code>breakpoint</code></a></li>
+        <li><a href="http://sassmeister.com/gist/352e2db3382d1c306cbf">Part 5C: Overriding the global context with <code>layout()</code></a></li>
+        <li><a href="http://sassmeister.com/gist/5e9e0e1181fcb81974cd">Part 6: Toolkit Examples</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -1,13 +1,11 @@
-.fluid-video {
-  display: none;
-  @extend %media-shared;
+/**
+ * @file _media.scss
+ */
 
-  @include media-border($primary);
-}
+.media {
+  @extend %region;
 
-.carousel {
-  @extend %media-shared;
-  margin-bottom: .5em;
-
-  @include media-border($primary);
+  iframe {
+    max-width: 100%;
+  }
 }

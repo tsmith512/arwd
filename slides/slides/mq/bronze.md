@@ -1,9 +1,13 @@
-## Bronze challenge:
+## Bronze Challenge:
 
-<br>
+<p class="large">
+Use Breakpoint to create a media query: <br /><br />
 
-Create a media query that will increase the body's font size when:
+Increase body <code>font-size</code> on viewports wider than 800 pixels.
+</p>
 
-* A chosen <code>min-width</code>
-
-<br>
+<p class="small">
+  Do this in the <code>recipe</code> folder on your example site. <br />
+  Define the breakpoint in your <strong>variables</strong> partial, then add the
+  <code>font-size</code> change to the <strong>body</strong> partial.
+</p>

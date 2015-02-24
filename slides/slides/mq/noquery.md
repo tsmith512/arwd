@@ -1,17 +1,35 @@
-## No-query fallbacks
+## No-query Fallbacks, Setup
 
-Breakpoint can also output [fallbacks](https://github.com/Team-Sass/breakpoint/wiki/No-Query-Fallbacks) for when no media queries are present, such as in IE<9
+Breakpoint can also output [fallbacks](https://github.com/at-import/breakpoint/wiki/No-Query-Fallbacks) for when media queries are unsupported.
 
-```scss
+<div class="columns">
+  <div>
+
+<p class="filename">&rarr; /style.scss</p>
+<pre><code class="language-scss">// SCSS:
+$breakpoint-no-queries: false;
+$breakpoint-no-query-fallbacks: false;
+@import "config/variables";
+@import "components/nav";</code></pre>
+<p class="filename">&rarr; /style-ie8.scss</p>
+<pre><code class="language-scss">// SCSS:
+$breakpoint-no-queries: true;
 $breakpoint-no-query-fallbacks: true;
-$nav-lg: 500px, 'no-query' '.lte-ie8';
-
+@import "config/variables";
+@import "components/nav";</code></pre>
+</div><div>
+<p class="filename">&rarr; /config/_variables.scss</p>
+<pre><code class="language-scss">$nav-lg: 500px, 'no-query' '.lte-ie8';</code></pre>
+<p class="filename">&rarr; /components/_nav.scss</p>
+<pre><code class="language-scss">// SCSS:
 nav {
   @include breakpoint($nav-lg) {
     width: 60%;
     margin-right: 4%;
   }
 }
-```
+</code></pre>
+  </div>
+</div>
 
-<p class="fragment"><em class="subdued">Just add a conditional class to your <code>&lt;html></code> element</em></p>
+<p class="small">Just add a conditional class to your <code>&lt;html></code> element.</p>

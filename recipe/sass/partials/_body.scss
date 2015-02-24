@@ -1,6 +1,18 @@
-body {
-  font-family: $font-serif;
-  line-height: $line-height;
+/**
+ * @file _body.scss
+ */
 
-  @include body-coloring($primary);
+body {
+  font-family: $font-sansserif;
+  line-height: $line-height;
+  background-color: $beige;
+  color: $charcoal;
+
+  main {
+    @extend %clearfix;
+
+    display: block;
+    max-width: 1283px;
+    margin: 0 auto;
+  }
 }

@@ -1,9 +1,11 @@
 ## Gold Challenge:
 
-Output media queries in <code>em</code> units.
+<p class="large">
+  Using Breakpoint, make a crazy color scheme on: <br /><br />
 
-Create a media query that will change to a third color scheme when
+  Landscape viewports taller than 600px <em>or</em> <br />
+  Portrait viewports narrower than 500px <em>or</em> <br />
+  IE8 using a No-Query fallback. <br /><br />
 
-* The body's font size changes in landscape<br><i>- or -</i>
-* A chosen <code>max-height</code> in portrait<br><i> - or -</i>
-* The browser is IE8 or below
+  Output this media query in <code>em</code> units.
+</p>

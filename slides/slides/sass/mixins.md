@@ -1,21 +1,34 @@
 ## Mixins
 
-```scss
-// Define
-@mixin button-make($color: #66B360) {
-background-color: $color;
-border: 2px solid lighten($color, 20%);
+<div class="columns">
+  <div>
+<pre><code class="language-scss">// SCSS
+@mixin my-button($color: #0000FF) {
+  background-color: $color;
+  border-width: 2px solid;
+  border-color: lighten($color, 20%);
 }
-
-// Call
 .button-one {
-@include button-make;
+  @include my-button;
 }
-
-// Call with arguments
 .button-two {
-@include button-make($color-facebook);
+  @include my-button(#AA0000);
+}</code></pre>
+  </div>
+  <div>
+<pre><code class="language-css">/\* Compiled CSS \*/
+.button-one {
+  background-color: #0000FF;
+  border-width: 2px solid;
+  border-color: #6666ff;
 }
-```
 
-<p class="fragment">Mixins are similar to functions, except they return blocks of CSS.</p>
+.button-two {
+  background-color: #AA0000;
+  border-width: 2px solid;
+  border-color: #ff1111;
+}</code></pre>
+  </div>
+</div>
+
+<p class="small">Mixins are like functions, but they return <strong>blocks of CSS</strong>.</p>

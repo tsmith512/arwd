@@ -1,9 +1,7 @@
-# Sass
+# What's Sass?
 
-Sass is a language construct to create CSS
-
-It makes writing awesome CSS easier
-
-<br>
-
-[http://sass-lang.com](sass-lang.com)
+<p class="large">
+  Sass is a language construct to create CSS.<br />
+  It makes writing awesome CSS easier.
+  <a href="http://sass-lang.com" target="_blank" class="reference">sass-lang.com</a>
+</p>

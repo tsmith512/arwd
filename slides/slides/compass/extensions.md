@@ -1,17 +1,27 @@
 ## Compass extensions
 
-<br>
+<div class="columns">
+  <div>
+    <h3>Featured today:</h3>
+    <ul class="listreset centered">
+      <li><a href="https://rubygems.org/gems/singularitygs">Singularity</a><br />
+        <small>Grids without Limits</small>
+      </li>
+      <li><a href="https://rubygems.org/gems/breakpoint">Breakpoint</a><br />
+        <small>Media Queries with Sass</small>
+      </li>
+      <li><a href="https://rubygems.org/gems/toolkit">Toolkit</a><br />
+        <small>Grab bag of RWD utilities</small>
+      </li>
+  </div>
+  <div>
+    <h3>Also common:</h3>
+    <ul class="listreset centered">
+      <li><a href="http://rubygems.org/gems/animation">Animation</a></li>
+      <li><a href="https://rubygems.org/gems/sassy-text-shadow">Sassy text-shadow</a></a></li>
+      <li><a href="http://rubygems.org/gems/sassy-buttons">Sassy Buttons</a></li>
+    </ul>
+  </div>
+</div>
 
-<p>These are Ruby gems, just like Sass and Compass.</p>
-
-<ul class="fragment">
-  <li><a href="http://rubygems.org/gems/animation">Animation</a></li>
-  <li><a href="https://rubygems.org/gems/sassy-text-shadow">Sassy text-shadow</a></a></li>
-  <li><a href="http://rubygems.org/gems/sassy-buttons">Sassy Buttons</a>, Sassy CSS3 buttons</li>
-  <li><a href="https://rubygems.org/gems/breakpoint">Breakpoint</a>, simple MQs with Sass</li>
-  <li><a href="https://rubygems.org/gems/singularitygs">Singularity</a>, Grids without Limits</li>
-</ul>
-
-<br><br>
-
-<p class="fragment"><a href="https://rubygems.org/gems/toolkit">Toolkit</a> bundles lots of this stuff together.</p>
+<p class="small">These are also Ruby gems, like Sass and Compass.</p>

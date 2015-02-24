@@ -1,0 +1,39 @@
+diff --git a/recipe/sass/partials/_body.scss b/recipe/sass/partials/_body.scss
+index 2898710..3fa61c3 100644
+--- a/recipe/sass/partials/_body.scss
++++ b/recipe/sass/partials/_body.scss
+@@ -8,6 +8,22 @@ body {
+   background-color: $beige;
+   color: $charcoal;
+ 
++  // Breakpoint: Bronze Challenge
++  @include breakpoint($bigger-text) {
++    font-size: 1.25em;
++  }
++
++  // Breakpoint: Silver Challange
++  @include breakpoint($taller-line-height) {
++    line-height: 1.625;
++  }
++
++  // Breakpoint: Gold Challenge
++  @include breakpoint($crazy-colors) {
++    background-color: $red;
++    color: $green;
++  }
++
+   main {
+     @extend %clearfix;
+ 
+diff --git a/recipe/sass/partials/global/_variables.scss b/recipe/sass/partials/global/_variables.scss
+index 793e3df..fd23a4f 100644
+--- a/recipe/sass/partials/global/_variables.scss
++++ b/recipe/sass/partials/global/_variables.scss
+@@ -48,4 +48,6 @@ $border-width: .35em;
+ // Breakpoint Setup
+ //////////////////////////////
+ 
+-// $my-breakpoint: xyz;
++$bigger-text: 800px; // Breakpoint: Bronze Challenge
++$taller-line-height: (orientation portrait) (min-height 600px); // Breakpoint: Silver Challange
++$crazy-colors: ((orientation landscape) (min-height 600px), (orientation portrait) (max-width 500px), 'no-query' '.lte-ie8'); // Breakpoint: Gold Challenge
