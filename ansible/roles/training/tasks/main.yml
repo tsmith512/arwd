@@ -8,7 +8,6 @@
     - .bashrc
     - .gitconfig
     - .gitignore
-    - .vimrc
 
 - name: Install all gems
   command: bash -lc "cd {{ item }} && bundle install"
